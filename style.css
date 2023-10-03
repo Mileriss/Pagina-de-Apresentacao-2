@@ -1,0 +1,407 @@
+/*FORMATAÇÃO GERAL*/
+a {
+    text-decoration: none !important;
+}
+
+/*! Espaçamento padrão para separar as divs*/
+.espacamento-div{
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+}
+
+/*! Titulo principal das seções*/
+.titulo-principal {
+    font-family: 'Tektur', cursive;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 80px;
+}
+
+/*! Sub-titulo de cada seção*/
+.sub-titulo {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/*! Texto de resumo nas seções*/
+.txt-principal {
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+/*! Texto usado nos grids e blocos*/
+.txt-secundario {
+    font-family: 'Share Tech', sans-serif;
+    color: white;
+}
+
+/*! Texto com fonte PIXELADA para destaque de palavras*/
+.txt-destaque{
+    font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+/*! Configuração do papel de parede das seções*/
+.img-de-fundo {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*! Formatação para escurecer o fundo de alguma div*/
+.fundo-escuro {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fundo-borrado{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/*FONTES EXTERNAS*/
+@font-face {
+    font-family: "PIXELADO";
+    src: url(./Fontes-externas/04b_30/PIXELADO.TTF);
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: black;
+}
+
+#logotipo-rafael {
+    height: 100px;
+    width: auto;
+    border-radius: 20px;
+}
+
+#lista-navbar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.link-item-navbar {
+    margin-right: 30px;
+}
+
+.item-lista-navbar {
+    list-style-type: none;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+/*APRESENTAÇÃO*/
+#apresentacao {
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/08/23/23/34/ai-generated-8209440_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/11/08/04/synthwave-8119826_1280.jpg);
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/05/13/16/30/synthwave-7990877_1280.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2019/01/19/13/12/synthwave-3941721_1280.jpg); */
+}
+
+/*! Div geral*/
+#bloco-apresentacao {
+    display: grid;
+    grid-template-columns: 70% auto;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/*! Div dos textos e icones*/
+#div-txt-apresentacao {
+    text-align: center;
+    padding: 60px;
+
+}
+
+#titulo-apresentacao {
+    font-family: 'Tektur', cursive;
+    font-size: 80px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.txt-apresentacao {
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 50px;
+}
+
+#rafael-mileris {
+    font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: goldenrod;
+    text-shadow: 3px 3px 3px blue;
+}
+
+#redes-contato {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: auto;
+    width: 40%;
+    background: linear-gradient(to right, black, rgb(220, 40, 40), steelblue, lightgreen);
+    padding: 10px;
+    border: 5px ridge black;
+    border-radius: 10px;
+}
+
+.icone-redes {
+    margin: 0 auto;
+    padding: 5px;
+    height: 80px;
+    border: 5px outset black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.icone-redes:hover {
+    transition: 0.1s;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#icone-github {
+    border: 5px outset black;
+    box-shadow: 0px 0px 10px black;
+}
+
+#icone-gmail {
+    border-top: 5px outset red;
+    border-left: 5px outset steelblue;
+    border-bottom: 5px outset green;
+    border-right: 5px outset goldenrod;
+    box-shadow: 0px 0px 10px red;
+}
+
+#icone-linkedin {
+    background-color: white;
+    border: 5px outset steelblue;
+    box-shadow: 0px 0px 10px steelblue;
+}
+
+#icone-whatsapp {
+    background-color: green;
+    border: 5px outset green;
+    box-shadow: 0px 0px 10px lightgreen;
+}
+
+/*! Div da imagem*/
+#div-img-apresentacao {
+    margin: 0 auto;
+    /* background-color: red; */
+    position: relative;
+    right: 80px;
+    max-height: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/* SOBRE MIM*/
+#sobre-mim {
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/08/23/23/34/ai-generated-8209440_1280.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/05/13/16/30/synthwave-7990877_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg);
+    /* background-image: url(https://cdn.pixabay.com/photo/2019/01/19/13/12/synthwave-3941721_1280.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/07/09/23/14/cosmic-8117067_1280.jpg); */
+    background-image: url(https://i.gifer.com/75lf.gif);
+}
+
+#bloco-sobre-mim {
+
+}
+
+#txt-sobre-mim{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px double darkmagenta;
+    box-shadow: 0px 0px 10px magenta;
+    border-radius: 100px;
+    padding: 50px;
+}
+
+/*OBJETIVO*/
+#objetivo{
+    margin: 0 auto;
+    background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg);
+    /* background-image: url(https://cdn.pixabay.com/photo/2018/05/18/12/43/style-3411108_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/13/work-harder-1845901_1280.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif);
+}
+
+#bloco-item-objetivo{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+#div-img-objetivo{
+    /* background-color: pink; */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.img-moldura{
+    border-radius: 10px;
+}
+
+#div-txt-objetivo{
+    font-size: 30px;
+    text-align: justify;
+    /* background-color: red; */
+    padding: 20px;
+}
+.txt-objetivo{
+    /* padding-top: 150px; */
+    color: white;
+}
+
+/*PROJETOS*/
+#projetos{
+    /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
+    background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg);
+    background-color: black;
+    margin: 0 auto;
+}
+
+#div-introd-projetos{
+    background-color: purple;
+}
+
+#grid-projetos{
+    /* background-color: red; */
+}
+
+.txt-introd-projetos{
+    color: yellow !important;
+    font-size: 30px;
+}
+
+.div-img-projetos{
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    place-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo-projetos{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 5px 10px black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.titulo-item-projetos{
+    font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: steelblue;
+    text-shadow: 5px 5px 2px lightblue;
+    -webkit-text-stroke: 0.8px lightblue;
+}
+
+.tec-usada-item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: auto;
+    width: fit-content !important;
+}
+
+.icone-tec-item{
+    height: 50px;
+    margin: 10px;
+}
+.icone-tec-item:hover{
+    transition: 0.2s;
+    padding: 2px;
+}
+
+.desc-item{
+    /* background-color: silver; */
+    text-align: justify;
+}
+
+.txt-desc-item{
+    color: white;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.btn-projetos{
+    display: flex;
+    flex-flow: row wrap;
+    place-content: center;
+    margin: 0px auto;
+    /* background-color: red; */
+    width: fit-content;
+}
+
+.btn-desc-projetos{
+    margin: 10px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    animation: btn-brilhante 10s alternate ease-in-out infinite;
+}
+
+@keyframes btn-brilhante {
+    0%{
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+        border-color: orangered;
+    }
+    25%{
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-color: blue;
+    }
+    50%{
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-color: yellowgreen;
+    }
+    75%{
+        transition: cubic-bezier(0.19, 1, 0.22, 1);
+        border-color: purple;
+    }
+    100%{
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+        border-color: blueviolet;
+    }
+    
+}
+
+/*! Front-end*/
+#projetos-frontend{
+    /* background-color: green; */
+}
+
+.front-item{
+    border: 5px ridge silver;
+    border-radius: 10px;
+}
+
+.item-img-projetos{
+    height: 450px;
+    /* height:100%; */
+    border-radius: 10px;
+}
