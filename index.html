@@ -42,6 +42,13 @@
 
     <!--APRESENTAÇÃO-->
     <section id="secao-apresentacao" class="secoes">
+      <!--Video apresentação-->
+      <div id="video-apresentacao">
+        <video autoplay muted loop>
+          <source src="./Videos/glitch-roxo.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!--Conteudo apresentação-->
       <div id="apresentacao" class="img-de-fundo">
         <div id="bloco-apresentacao" class="fundo-escuro">
           <div id="div-txt-apresentacao" class="container">
@@ -67,37 +74,37 @@
         <div id="bloco-sobre-mim" class="espacamento-div">
           <h1 class="titulo-principal">Sobre mim</h1>
           <div id="grid-sobre-mim" class="container-fluid row">
-            <div id="habilidades" class="col-sm-3">
-              <h2 id="sub-titulo-habilidades" class="sub-titulo txt-destaque">Habilidades</h2>
+            <div id="habilidades" class="col-sm-3 fundo-borrado">
+              <h2 id="sub-titulo-habilidades" class="sub-titulo">Habilidades</h2>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-html.svg" class="icone-habilidades" alt="Icone da Tecnologia Hypertext Markup Language (HTML)" title="HTML" />
-                <b class="margem-habilidades" style="color: lightgreen;">------------ 60%</b>
+                <b class="margem-habilidades" style="color: lightgreen">------------ <span class="num-margem-habilidade">60%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-css.svg" class="icone-habilidades" alt="Icone da Tecnologia Cascading Style Sheets" title="CSS" />
-                <b class="margem-habilidades" style="color: yellow;">---------- 50%</b>
+                <b class="margem-habilidades" style="color: yellow">---------- <span class="num-margem-habilidade">50%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-javascript.svg" class="icone-habilidades" alt="Icone da linguagem de programação Javascript" title="Javascript" />
-                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
-                <b class="margem-habilidades" style="color: salmon;">------ 30%</b>
+                <b class="margem-habilidades" style="color: salmon">------ <span class="num-margem-habilidade">30%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
-                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
-                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
               </div>
             </div>
             <div id="txt-sobre-mim" class="container fundo-borrado col">
               <p class="txt-principal">Me chamo Rafael Mileris, tenho 26 anos, sou um estudante de programação e moro no bairro da Liberdade - Centro de SP.</p>
               <p class="txt-principal">
-                Trabalho como Auxiliar em Projetos de Telecom para uma empresa de consultoria, passo boa parte do meu dia trabalhando e estudando sobre os assuntos da faculdade ou sobre a tecnologia que estou focado em aprender. Atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque" style="color: goldenrod">Javascript</span>.
+                Trabalho como Auxiliar em Projetos de Telecom para uma empresa de consultoria, passo boa parte do meu dia trabalhando e estudando sobre os assuntos da faculdade ou sobre a tecnologia que estou focado em aprender. Atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque tecnologia-destaque" style="color: orangered;">HTML</span>, <span class="txt-destaque tecnologia-destaque" style="color: rebeccapurple;" >CSS</span> e <span class="txt-destaque tecnologia-destaque" style="color: goldenrod;">Javascript</span>.
               </p>
               <p class="txt-principal">Sou novo nesse universo da tecnologia, comecei a graduação em 2021 e antes disso não sabia nada sobre o assunto, acabei conhecendo a programação através de videos na internet e depois que criei meu primeiro algoritmo eu não quis mais parar.</p>
             </div>
@@ -116,9 +123,9 @@
             <img id="gif-coding" class="img-moldura" src="https://i.pinimg.com/originals/35/d5/54/35d554f31bd87bf3f5097830af38332b.gif" alt="Animação de um garoto mexendo no computador" />
           </div>
           <div id="div-txt-objetivo">
-            <p class="txt-objetivo txt-secundario">Meu objetivo atual é realizar a pós-graduação em <span class="txt-destaque" style="color: lightblue">Engenharia de Software</span> e continuar estudando sobre os assuntos que me interessam na programação.</p>
-            <p class="txt-objetivo txt-secundario">Além de <span class="txt-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque" style="color: goldenrod">Javascript</span>, eu pretendo aprimorar os conhecimentos no Front-end com <span class="txt-destaque" style="color: steelblue">React</span> e alguns frameworks (ainda não definidos).</p>
-            <p class="txt-objetivo txt-secundario">Tambem desejo estudar mais sobre o Back-end, iniciando pelo <span class="txt-destaque" style="color: darkgreen">Node.JS</span>, <span class="txt-destaque" style="color: lightslategrey">SQL</span>, <span class="txt-destaque" style="color: blueviolet">C#</span> e <span class="txt-destaque" style="color: gold">Py</span><span class="txt-destaque" style="color: blue">thon</span>.</p>
+            <p class="txt-objetivo txt-secundario">Meu objetivo atual é realizar a pós-graduação em <span class="txt-destaque tecnologia-destaque" style="color: lightblue">Engenharia de Software</span> e continuar estudando sobre os assuntos que me interessam na programação.</p>
+            <p class="txt-objetivo txt-secundario">Além de <span class="txt-destaque tecnologia-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque tecnologia-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque tecnologia-destaque" style="color: goldenrod">Javascript</span>, eu pretendo aprimorar os conhecimentos no Front-end com <span class="txt-destaque tecnologia-destaque" style="color: steelblue">React</span> e alguns frameworks (ainda não definidos).</p>
+            <p class="txt-objetivo txt-secundario">Tambem desejo estudar mais sobre o Back-end, iniciando pelo <span class="txt-destaque tecnologia-destaque" style="color: darkgreen">Node.JS</span>, <span class="txt-destaque tecnologia-destaque" style="color: lightslategrey">SQL</span>, <span class="txt-destaque tecnologia-destaque" style="color: blueviolet">C#</span> e <span class="txt-destaque tecnologia-destaque" style="color: gold">Py</span><span class="txt-destaque tecnologia-destaque" style="color: blue">thon</span>.</p>
           </div>
         </div>
       </div>
