@@ -66,12 +66,41 @@
       <div id="sobre-mim" class="img-de-fundo">
         <div id="bloco-sobre-mim" class="espacamento-div">
           <h1 class="titulo-principal">Sobre mim</h1>
-          <div id="txt-sobre-mim" class="container fundo-borrado">
-            <p class="txt-principal">Me chamo Rafael Mileris, tenho 26 anos, sou um estudante de programação e moro no bairro da Liberdade - Centro de SP.</p>
-            <p class="txt-principal">
-              Trabalho como Auxiliar em Projetos de Telecom para uma empresa de consultoria, passo boa parte do meu dia trabalhando e estudando sobre os assuntos da faculdade ou sobre a tecnologia que estou focado em aprender. Atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque" style="color: goldenrod">Javascript</span>.
-            </p>
-            <p class="txt-principal">Sou novo nesse universo da tecnologia, comecei a graduação em 2021 e antes disso não sabia nada sobre o assunto, acabei conhecendo a programação através de videos na internet e depois que criei meu primeiro algoritmo eu não quis mais parar.</p>
+          <div id="grid-sobre-mim" class="container-fluid row">
+            <div id="habilidades" class="col-sm-3">
+              <h2 id="sub-titulo-habilidades" class="sub-titulo txt-destaque">Habilidades</h2>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-html.svg" class="icone-habilidades" alt="Icone da Tecnologia Hypertext Markup Language (HTML)" title="HTML" />
+                <b class="margem-habilidades" style="color: lightgreen;">------------ 60%</b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-css.svg" class="icone-habilidades" alt="Icone da Tecnologia Cascading Style Sheets" title="CSS" />
+                <b class="margem-habilidades" style="color: yellow;">---------- 50%</b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-javascript.svg" class="icone-habilidades" alt="Icone da linguagem de programação Javascript" title="Javascript" />
+                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
+                <b class="margem-habilidades" style="color: salmon;">------ 30%</b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
+                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
+                <b class="margem-habilidades" style="color: orange;">-------- 40%</b>
+              </div>
+            </div>
+            <div id="txt-sobre-mim" class="container fundo-borrado col">
+              <p class="txt-principal">Me chamo Rafael Mileris, tenho 26 anos, sou um estudante de programação e moro no bairro da Liberdade - Centro de SP.</p>
+              <p class="txt-principal">
+                Trabalho como Auxiliar em Projetos de Telecom para uma empresa de consultoria, passo boa parte do meu dia trabalhando e estudando sobre os assuntos da faculdade ou sobre a tecnologia que estou focado em aprender. Atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque" style="color: goldenrod">Javascript</span>.
+              </p>
+              <p class="txt-principal">Sou novo nesse universo da tecnologia, comecei a graduação em 2021 e antes disso não sabia nada sobre o assunto, acabei conhecendo a programação através de videos na internet e depois que criei meu primeiro algoritmo eu não quis mais parar.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -110,7 +139,7 @@
               <p class="txt-secundario">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, maxime cupiditate nihil officiis quae ex voluptate, pariatur et quasi eius laborum quas aspernatur. Quae reiciendis illo cupiditate ipsa vel blanditiis.</p>
             </div>
             <!--Carousel Front-->
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <!--PROJETO - CALCULADORA-->
                 <div class="front-item carousel-item active" data-bs-interval="5000">
