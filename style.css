@@ -294,6 +294,20 @@ a {
     border: 10px double lightblue;
     box-shadow: 0px 0px 10px lightblue;
     border-radius: 30px;
+    animation: luz-piscando-habilidades 1s alternate ease-in-out infinite;
+}
+
+@keyframes luz-piscando-habilidades {
+    0%{
+        box-shadow: 0px 0px 5px lightblue;
+        transition: 5ms;
+        
+    }
+    100%{
+        box-shadow: 0px 0px 10px lightblue;
+        transition: 20ms;
+    }
+    
 }
 
 #sub-titulo-habilidades{
@@ -327,6 +341,20 @@ a {
     box-shadow: 0px 0px 10px magenta;
     border-radius: 30px;
     padding: 50px;
+    animation: luz-piscando-sobre-mim 1s alternate ease-in-out infinite;
+}
+
+@keyframes luz-piscando-sobre-mim {
+    0%{
+        box-shadow: 0px 0px 5px magenta;
+        transition: 5ms;
+        
+    }
+    100%{
+        box-shadow: 0px 0px 10px magenta;
+        transition: 20ms;
+    }
+    
 }
 
 /*OBJETIVO*/
