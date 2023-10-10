@@ -1,12 +1,16 @@
 /*FORMATAÇÃO GERAL*/
+body{
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none !important;
 }
 
 /*! Espaçamento padrão para separar as divs*/
 .espacamento-div{
-    /* padding-top: 100px; */
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 /*! Titulo principal das seções*/
@@ -137,7 +141,8 @@ a {
 
 /*NAVBAR*/
 .navbar {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
 }
 
 #logotipo-rafael {
@@ -340,8 +345,10 @@ a {
 }
 
 .num-margem-habilidade{
-    font-family: 'TECH', 'Courier New', Courier, monospace;
+    font-family: 'PIXELADO', 'Courier New', Courier, monospace;
     text-shadow: 5px 5px 5px black;
+    font-size: 25px;
+    font-weight: normal;
 }
 
 #txt-sobre-mim{
@@ -453,8 +460,12 @@ a {
 }
 
 .desc-item{
-    /* background-color: silver; */
     text-align: justify;
+    border: 5px solid dimgrey;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    width: auto;
 }
 
 .txt-desc-item{
