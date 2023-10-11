@@ -1,5 +1,5 @@
 /*FORMATAÇÃO GERAL*/
-body{
+body {
     scroll-behavior: smooth;
 }
 
@@ -8,7 +8,7 @@ a {
 }
 
 /*! Espaçamento padrão para separar as divs*/
-.espacamento-div{
+.espacamento-div {
     padding-top: 50px;
     padding-bottom: 150px;
 }
@@ -17,7 +17,7 @@ a {
 .titulo-principal {
     font-family: 'Tektur', cursive;
     color: white;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 0px black;
     text-align: center;
     padding-top: 50px;
     font-size: 80px;
@@ -25,7 +25,7 @@ a {
 
 /*! Sub-titulo de cada seção*/
 .sub-titulo {
-    font-family: 'TECH' , 'Share Tech Mono', monospace;
+    font-family: 'TECH', 'Share Tech Mono', monospace;
     color: white;
     font-size: 60px;
     text-align: center;
@@ -33,40 +33,45 @@ a {
 }
 
 .sub-titulo-brilhante {
-    font-family: 'TECH' , 'Share Tech Mono', monospace;
+    font-family: 'TECH', 'Share Tech Mono', monospace;
     color: black;
     font-size: 60px;
     text-align: center;
     padding-top: 50px;
     animation: borda-brilhante 5s ease-in-out alternate infinite;
 }
+
 @keyframes borda-brilhante {
-    0%{
+    0% {
         transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
         -webkit-text-stroke: 1px orangered;
         text-shadow: 2px 2px 3px orange;
     }
-    25%{
+
+    25% {
         transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
         -webkit-text-stroke: 1px steelblue;
         text-shadow: 2px 2px 3px slateblue;
     }
-    50%{
+
+    50% {
         transition: cubic-bezier(0.86, 0, 0.07, 1);
         -webkit-text-stroke: 1px goldenrod;
         text-shadow: 2px 2px 3px yellow;
     }
-    75%{
+
+    75% {
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
         -webkit-text-stroke: 1px rebeccapurple;
         text-shadow: 2px 2px 3px purple;
     }
-    100%{
+
+    100% {
         transition: cubic-bezier(0.77, 0, 0.175, 1);
         -webkit-text-stroke: 1px blue;
         text-shadow: 2px 2px 3px yellow;
     }
-    
+
 }
 
 
@@ -84,13 +89,13 @@ a {
 }
 
 /*! Texto com fonte PIXELADA para destaque de palavras*/
-.txt-destaque{
+.txt-destaque {
     font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
 }
 
 /*! Formatação para as tecnologias detacadas nos textos*/
-.tecnologia-destaque{
+.tecnologia-destaque {
     text-shadow: 5px 5px 5px black
 }
 
@@ -102,7 +107,7 @@ a {
 }
 
 /*! Configuração do video utilizado como papel de parede nas seções*/
-#video-apresentacao{
+#video-apresentacao {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -112,7 +117,7 @@ a {
 }
 
 /*! Fixar conteudo na área do video (caso haja)*/
-.fixar-conteudo{
+.fixar-conteudo {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -123,7 +128,7 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.fundo-borrado{
+.fundo-borrado {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
 }
@@ -133,6 +138,7 @@ a {
     font-family: "PIXELADO";
     src: url(./Fontes-externas/04b_30/PIXELADO.TTF);
 }
+
 /*FONTE EXTERNA - TECH*/
 @font-face {
     font-family: "TECH";
@@ -281,7 +287,6 @@ a {
     border-radius: 20px;
 }
 
-
 /* SOBRE MIM*/
 #sobre-mim {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/08/23/23/34/ai-generated-8209440_1280.jpg); */
@@ -293,17 +298,15 @@ a {
     background-image: url(https://i.gifer.com/75lf.gif);
 }
 
-#bloco-sobre-mim {
-    
-}
+#bloco-sobre-mim {}
 
-#grid-sobre-mim{
+#grid-sobre-mim {
     /* background-color: black; */
     margin: 0 auto;
     grid-gap: 10px;
 }
 
-#habilidades{
+#habilidades {
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px double lightblue;
     box-shadow: 0px 0px 10px lightblue;
@@ -312,46 +315,47 @@ a {
 }
 
 @keyframes luz-piscando-habilidades {
-    0%{
+    0% {
         box-shadow: 0px 0px 5px lightblue;
         transition: 5ms;
-        
+
     }
-    100%{
+
+    100% {
         box-shadow: 0px 0px 10px lightblue;
         transition: 20ms;
     }
-    
+
 }
 
-#sub-titulo-habilidades{
+#sub-titulo-habilidades {
     font-family: 'TECH', 'Courier New', Courier, monospace;
     background-color: transparent !important;
     color: black;
 }
 
-#habilidades > * {
+#habilidades>* {
     margin-bottom: 15px;
 }
 
-.icone-habilidades{
+.icone-habilidades {
     height: 50px;
 }
 
-.margem-habilidades{
+.margem-habilidades {
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px 3px black;
 }
 
-.num-margem-habilidade{
+.num-margem-habilidade {
     font-family: 'PIXELADO', 'Courier New', Courier, monospace;
     text-shadow: 5px 5px 5px black;
     font-size: 25px;
     font-weight: normal;
 }
 
-#txt-sobre-mim{
+#txt-sobre-mim {
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px double darkmagenta;
     box-shadow: 0px 0px 10px magenta;
@@ -361,20 +365,21 @@ a {
 }
 
 @keyframes luz-piscando-sobre-mim {
-    0%{
+    0% {
         box-shadow: 0px 0px 5px magenta;
         transition: 5ms;
-        
+
     }
-    100%{
+
+    100% {
         box-shadow: 0px 0px 10px magenta;
         transition: 20ms;
     }
-    
+
 }
 
 /*OBJETIVO*/
-#objetivo{
+#objetivo {
     margin: 0 auto;
     background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg);
     /* background-image: url(https://cdn.pixabay.com/photo/2018/05/18/12/43/style-3411108_1280.jpg); */
@@ -383,52 +388,60 @@ a {
     background-image: url(https://camo.githubusercontent.com/405ec87f325f46fb3b98dff86e47a3122360532127d9ea40aa9d78ce107b9d6a/68747470733a2f2f692e696d6775722e636f6d2f4c65756836776d2e676966);
 }
 
-#bloco-item-objetivo{
+#bloco-item-objetivo {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
 }
 
-#div-img-objetivo{
+#div-img-objetivo {
     /* background-color: pink; */
     margin: 0 auto;
     padding: 15px;
 }
 
-.img-moldura{
+.img-moldura {
     border-radius: 10px;
 }
 
-#div-txt-objetivo{
+#div-txt-objetivo {
     font-size: 30px;
     text-align: justify;
     /* background-color: red; */
     padding: 20px;
 }
-.txt-objetivo{
+
+.txt-objetivo {
     /* padding-top: 150px; */
     color: white;
 }
 
 /*PROJETOS*/
-#projetos{
+#projetos {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
     /* background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg); */
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif);
     margin: 0 auto;
 }
 
-#div-introd-projetos{
+#div-introd-projetos {
     /* background-color: purple; */
     margin: 0 auto;
     text-align: justify;
 }
 
-#grid-projetos{
+#grid-projetos {
     /* background-color: red; */
 }
 
-.div-img-projetos{
+#projetos-frontend {
+    /* background-color: red; */
+    border: 3px solid darkslategrey;
+    border-radius: 15px;
+    animation: borda-gradiente 1.5s ease-in-out alternate infinite;
+}
+
+.div-img-projetos {
     margin: 20px auto;
     padding: 20px;
     display: flex;
@@ -437,12 +450,12 @@ a {
     background-size: cover;
 }
 
-.div-titulo-projetos{
+.div-titulo-projetos {
     margin-bottom: 20px;
     /* padding: 10px; */
 }
 
-.tec-usada-item{
+.tec-usada-item {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -450,32 +463,44 @@ a {
     width: fit-content !important;
 }
 
-.icone-tec-item{
+.icone-tec-item {
     height: 50px;
     margin: 10px;
 }
-.icone-tec-item:hover{
+
+.icone-tec-item:hover {
     transition: 0.2s;
     padding: 2px;
 }
 
-.desc-item{
+.desc-item {
     text-align: justify;
-    border: 5px solid dimgrey;
-    background-color: black;
     border-radius: 10px;
     margin: 10px;
     width: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
 
-.txt-desc-item{
+@keyframes borda-gradiente {
+    0%{
+        box-shadow: 0px 0px 10px darkgreen;
+        transition: 5ms;
+    }
+    100%{
+        box-shadow: 0px 0px 20px darkgreen;
+        transition: 10ms;
+    }
+}
+
+.txt-desc-item {
     color: white;
     font-family: 'Pixelify Sans', cursive;
     font-size: 20px;
     padding: 20px;
 }
 
-.btn-projetos{
+.btn-projetos {
     display: flex;
     flex-flow: row wrap;
     place-content: center;
@@ -484,7 +509,7 @@ a {
     width: fit-content;
 }
 
-.btn-desc-projetos{
+.btn-desc-projetos {
     margin: 10px;
     background-color: black;
     font-size: 20px;
@@ -496,40 +521,44 @@ a {
 }
 
 @keyframes btn-brilhante {
-    0%{
+    0% {
         transition: cubic-bezier(0.165, 0.84, 0.44, 1);
         border-color: orangered;
     }
-    25%{
+
+    25% {
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         border-color: blue;
     }
-    50%{
+
+    50% {
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         border-color: yellowgreen;
     }
-    75%{
+
+    75% {
         transition: cubic-bezier(0.19, 1, 0.22, 1);
         border-color: purple;
     }
-    100%{
+
+    100% {
         transition: cubic-bezier(0.215, 0.610, 0.355, 1);
         border-color: blueviolet;
     }
-    
+
 }
 
 /*! Front-end*/
-#projetos-frontend{
+#projetos-frontend {
     /* background-color: green; */
 }
 
-.front-item{
+.front-item {
     /* border: 10px solid silver; */
     border-radius: 10px;
 }
 
-.item-img-projetos{
+.item-img-projetos {
     height: 450px;
     /* height:100%; */
     border-radius: 10px;
