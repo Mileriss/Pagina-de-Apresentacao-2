@@ -34,8 +34,8 @@
         <a class="link-item-navbar" href="#projetos">
           <li class="item-lista-navbar">Projetos</li>
         </a>
-        <a class="link-item-navbar" href="#">
-          <li class="item-lista-navbar">Teste 5</li>
+        <a class="link-item-navbar" href="#contato">
+          <li class="item-lista-navbar">Contato</li>
         </a>
       </ul>
     </nav>
@@ -49,9 +49,9 @@
         </video>
       </div>
       <!--Conteudo apresentação-->
-      <div id="apresentacao" class="img-de-fundo ">
+      <div id="apresentacao" class="img-de-fundo">
         <div id="bloco-apresentacao" class="fundo-escuro espacamento-div">
-          <div id="div-txt-apresentacao" class="container ">
+          <div id="div-txt-apresentacao" class="container">
             <h1 id="titulo-apresentacao">Seja bem vindo(a) ao meu portfólio!</h1>
             <p class="txt-apresentacao">Me chamo <span id="rafael-mileris" class="txt-apresentacao">Rafael Mileris</span> e sou um estudante de programação.</p>
             <div id="redes-contato" class="fundo-borrado">
@@ -61,7 +61,7 @@
               <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img id="icone-whatsapp" class="icone-redes" src="./Icones/icone-whatsapp-preto.svg" alt="Icone da rede social Whatsapp" /></a>
             </div>
           </div>
-          <div id="div-img-apresentacao" class="container ">
+          <div id="div-img-apresentacao" class="container">
             <img id="img-apresentacao" src="./Imagens-sem-fundo/Rafael-Mileris-AI-2-sem-fundo.png" alt="Imagem de apresentação do perfil Rafael Mileris" title="Eu gerado por Inteligencia Artificial" />
           </div>
         </div>
@@ -150,7 +150,6 @@
             <!--Carousel Front-->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-
                 <!--PROJETO - CALCULADORA-->
                 <div class="front-item carousel-item active" data-bs-interval="5000">
                   <div class="div-titulo-projetos">
@@ -284,8 +283,21 @@
     <section id="secao-contato" class="secoes">
       <div id="contato" class="img-de-fundo">
         <h1 class="titulo-principal">Contato</h1>
+        <div id="txt-introd-contato" class="container">
+          <p class="txt-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ab dicta. Quibusdam temporibus consequuntur sapiente, ipsa minus fugit eveniet, dolorum voluptates amet cupiditate molestiae! Maxime porro dolorem fugiat enim.</p>
+        </div>
+        <div id="form-contato">
+          <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
+            <label class="form-lbl txt-secundario" for="form-inp">Nome:</label>
+            <input class="form-inp" type="text" name="nome" maxlength="20" required>
+            <label class="form-lbl txt-secundario" for="form-inp">Contato:</label>
+            <input class="form-inp" type="tel" name="contato" required>
+            <label class="form-lbl txt-secundario" for="form-inp">Email:</label>
+            <input class="form-inp" type="email" name="email" required>
+            <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
-
     </section>
 
     <!--JAVASCRIPT-->
