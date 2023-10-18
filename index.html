@@ -44,9 +44,9 @@
     <section id="secao-apresentacao" class="secoes">
       <!--Video apresentação-->
       <div id="video-apresentacao">
-        <!-- <video autoplay muted loop>
+        <video autoplay muted loop>
           <source src="./Videos/glitch-roxo.mp4" type="video/mp4" />
-        </video> -->
+        </video>
       </div>
       <!--Conteudo apresentação-->
       <div id="apresentacao" class="img-de-fundo">
@@ -129,7 +129,8 @@
               Além de <span class="txt-destaque tecnologia-destaque" style="color: orangered">HTML</span>, <span class="txt-destaque tecnologia-destaque" style="color: rebeccapurple">CSS</span> e <span class="txt-destaque tecnologia-destaque" style="color: goldenrod">Javascript</span>, eu pretendo aprimorar os conhecimentos no Front-end com <span class="txt-destaque tecnologia-destaque" style="color: steelblue">React</span> e alguns frameworks (ainda não definidos).
             </p>
             <p class="txt-objetivo txt-secundario">
-              Tambem desejo estudar mais sobre outras tecnologias e linguagens como o <span class="txt-destaque tecnologia-destaque" style="color: darkgreen">Node.JS</span>, <span class="txt-destaque tecnologia-destaque" style="color: lightslategrey">SQL</span>, <span class="txt-destaque tecnologia-destaque" style="color: blueviolet">C#</span> e <span class="txt-destaque tecnologia-destaque" style="color: gold">Py</span><span class="txt-destaque tecnologia-destaque" style="color: blue">thon</span>.
+              Tambem desejo estudar mais sobre outras tecnologias e linguagens como o <span class="txt-destaque tecnologia-destaque" style="color: darkgreen">Node.JS</span>, <span class="txt-destaque tecnologia-destaque" style="color: lightslategrey">SQL</span>, <span class="txt-destaque tecnologia-destaque" style="color: blueviolet">C#</span> e <span class="txt-destaque tecnologia-destaque" style="color: gold">Py</span
+              ><span class="txt-destaque tecnologia-destaque" style="color: blue">thon</span>.
             </p>
           </div>
         </div>
@@ -283,19 +284,31 @@
     <section id="secao-contato" class="secoes">
       <div id="contato" class="img-de-fundo">
         <h1 class="titulo-principal">Contato</h1>
-        <div id="txt-introd-contato" class="container">
+        <!-- <div id="txt-introd-contato" class="container">
           <p class="txt-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ab dicta. Quibusdam temporibus consequuntur sapiente, ipsa minus fugit eveniet, dolorum voluptates amet cupiditate molestiae! Maxime porro dolorem fugiat enim.</p>
-        </div>
-        <div id="form-contato">
-          <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
-            <label class="form-lbl txt-secundario" for="form-inp">Nome:</label>
-            <input class="form-inp" type="text" name="nome" maxlength="20" required>
-            <label class="form-lbl txt-secundario" for="form-inp">Contato:</label>
-            <input class="form-inp" type="tel" name="contato" required>
-            <label class="form-lbl txt-secundario" for="form-inp">Email:</label>
-            <input class="form-inp" type="email" name="email" required>
-            <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
-          </form>
+        </div> -->
+        <div id="div-form" class="row container">
+          <div id="txt-introd-form">
+            <p class="txt-principal txt-form-contato">Se desejar falar comigo, preencha o formulário ao lado e em breve eu entrarei em contato.</p>
+            <p class="txt-principal txt-form-contato">Obrigado por ter visitado a minha página!</p>
+          </div>
+          <div id="form-contato">
+            <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
+              <fieldset id="form-fieldset">
+                <legend id="titulo-fieldset">Entre em contato!</legend>
+                <label class="form-lbl txt-secundario" for="nome">Nome:</label>
+                <input class="form-inp txt-secundario" placeholder="Digite seu nome..." type="text" name="nome" maxlength="20" required /><br />
+                <label class="form-lbl txt-secundario" for="contato">Contato:</label>
+                <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="number" name="contato" required /><br />
+                <label class="form-lbl txt-secundario" for="email">Email:</label>
+                <input class="form-inp txt-secundario" placeholder="Digite seu e-mail..." type="email" name="email" required /><br />
+                <label class="form-lbl txt-secundario" for="solicitacao">Solicitacao:</label>
+                <textarea class="form-inp" placeholder="Deixe sua solicitação, sugestão, elogio ou critica aqui..." name="solicitacao" maxlength="250" required></textarea><br />
+
+                <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </div>
     </section>
