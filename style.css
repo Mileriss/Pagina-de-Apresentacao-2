@@ -598,7 +598,7 @@ a {
 
 #div-form{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 60% 40%;
     border: 2px solid red;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -631,5 +631,9 @@ a {
 
 .form-inp{
     color: black;
-    width: 50%;
+    width: 100%;
+}
+
+.inp-obrigatorio{
+    color: black;
 }
