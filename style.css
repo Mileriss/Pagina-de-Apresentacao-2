@@ -7,6 +7,22 @@ a {
     text-decoration: none !important;
 }
 
+/*BOOTSTRAP*/
+
+/*! Icone para alterar slide na seção PROJETOS*/
+.carousel-control-next, .carousel-control-prev{
+    background-color: black !important;
+    border: 2px solid white !important;
+    border-radius: 10px;
+    height: fit-content !important;
+    width: 100px !important;
+    position: relative;
+    top: 50% !important;
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+
+
 /*! Espaçamento padrão para separar as divs*/
 .espacamento-div {
     padding-top: 50px;
@@ -178,7 +194,7 @@ a {
 /*APRESENTAÇÃO*/
 #apresentacao {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/08/23/23/34/ai-generated-8209440_1280.jpg); */
-    /* background-image: url(https://cdn.pixabay.com/photo/2023/07/11/08/04/synthwave-8119826_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2023/07/11/08/04/synthwave-8119826_1280.jpg);
     /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
     /* background-image: url(https://cdn.pixabay.com/photo/2023/05/13/16/30/synthwave-7990877_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg); */
@@ -293,10 +309,10 @@ a {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/08/23/23/34/ai-generated-8209440_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
     /* background-image: url(https://cdn.pixabay.com/photo/2023/05/13/16/30/synthwave-7990877_1280.jpg); */
-    /* background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg);
     /* background-image: url(https://cdn.pixabay.com/photo/2019/01/19/13/12/synthwave-3941721_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2023/07/09/23/14/cosmic-8117067_1280.jpg); */
-    background-image: url(https://i.gifer.com/75lf.gif);
+    /* background-image: url(https://i.gifer.com/75lf.gif); */
     
 }
 
@@ -385,9 +401,9 @@ a {
     margin: 0 auto;
     /* background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2018/05/18/12/43/style-3411108_1280.jpg); */
-    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/13/work-harder-1845901_1280.jpg); */
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/13/work-harder-1845901_1280.jpg);
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
-    background-image: url(https://camo.githubusercontent.com/405ec87f325f46fb3b98dff86e47a3122360532127d9ea40aa9d78ce107b9d6a/68747470733a2f2f692e696d6775722e636f6d2f4c65756836776d2e676966);
+    /* background-image: url(https://camo.githubusercontent.com/405ec87f325f46fb3b98dff86e47a3122360532127d9ea40aa9d78ce107b9d6a/68747470733a2f2f692e696d6775722e636f6d2f4c65756836776d2e676966); */
 }
 
 #bloco-item-objetivo {
@@ -421,8 +437,8 @@ a {
 /*PROJETOS*/
 #projetos {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
-    /* background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg); */
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif);
+    background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg);
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
     margin: 0 auto;
 }
 
@@ -430,6 +446,9 @@ a {
     /* background-color: purple; */
     margin: 0 auto;
     text-align: justify;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 #grid-projetos {
