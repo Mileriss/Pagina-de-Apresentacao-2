@@ -294,19 +294,16 @@
           </div>
           <div id="form-contato">
             <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
-              <fieldset id="form-fieldset">
-                <legend id="titulo-fieldset">Entre em contato!</legend>
-                <label class="form-lbl txt-secundario" for="nome">Nome:</label>
-                <input class="form-inp txt-secundario" placeholder="Digite seu nome..." type="text" name="nome" maxlength="20" required /><br />
-                <label class="form-lbl txt-secundario" for="contato">Contato:</label>
-                <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="number" name="contato" required /><br />
-                <label class="form-lbl txt-secundario" for="email">Email:</label>
-                <input class="form-inp txt-secundario" placeholder="Digite seu e-mail..." type="email" name="email" required /><br />
-                <label class="form-lbl txt-secundario" for="solicitacao">Solicitacao:</label>
-                <textarea class="form-inp" placeholder="Deixe sua solicitação, sugestão, elogio ou critica aqui..." name="solicitacao" maxlength="250" required></textarea><br />
+              <label class="form-lbl txt-secundario" for="nome"><span class="inp-obrigatorio">*</span>Nome:</label><br />
+              <input class="form-inp txt-secundario" placeholder="Digite seu nome..." type="text" name="nome" maxlength="30" title="Máximo de 30 caracteres" required /><br />
+              <label class="form-lbl txt-secundario" for="contato">Contato:</label><br />
+              <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="tel" name="contato" maxlength="11" title="Sem espaços ou traços" /><br />
+              <label class="form-lbl txt-secundario" for="email">Email:</label><br />
+              <input class="form-inp txt-secundario" placeholder="Digite seu e-mail..." type="email" name="email" autocomplete="email" title="Preencha este campo (Não obrigatório)" /><br />
+              <label class="form-lbl txt-secundario" for="solicitacao"><span class="inp-obrigatorio">*</span>Solicitacao:</label><br />
+              <textarea class="form-inp" placeholder="Deixe sua solicitação, sugestão, elogio ou critica aqui..." name="solicitacao" maxlength="250" title="Máximo de 250 caracteres" required></textarea><br />
 
-                <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
-              </fieldset>
+              <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
             </form>
           </div>
         </div>
