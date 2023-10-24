@@ -1,6 +1,7 @@
 /*FORMATAÇÃO GERAL*/
 body {
     scroll-behavior: smooth;
+    /* background-color: black !important; */
 }
 
 a {
@@ -267,32 +268,6 @@ a {
     padding: 10px;
     border-radius: 15px;
 }
-
-
-/* #icone-github {
-    border: 5px outset black;
-    box-shadow: 0px 0px 10px black;
-}
-
-#icone-gmail {
-    border-top: 5px outset red;
-    border-left: 5px outset steelblue;
-    border-bottom: 5px outset green;
-    border-right: 5px outset goldenrod;
-    box-shadow: 0px 0px 10px red;
-}
-
-#icone-linkedin {
-    background-color: white;
-    border: 5px outset steelblue;
-    box-shadow: 0px 0px 10px steelblue;
-}
-
-#icone-whatsapp {
-    background-color: green;
-    border: 5px outset green;
-    box-shadow: 0px 0px 10px lightgreen;
-} */
 
 /*! Div da imagem*/
 #div-img-apresentacao {
@@ -611,7 +586,6 @@ a {
     grid-template-columns: 60% 40%;
     border: 2px solid red;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 #txt-introd-form{
@@ -623,15 +597,8 @@ a {
     font-size: 40px;
 }
 
-#form-fieldset{
-    background-color: black;
-}
-#titulo-fieldset{
-    background-color: red;
-}
-
 #form-contato{
-    background-color: brown;
+    background-color: black;
     padding: 20px;
 }
 
@@ -645,5 +612,70 @@ a {
 }
 
 .inp-obrigatorio{
-    color: black;
+    color: goldenrod;
+}
+
+#btn-enviar{
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-btn{
+    font-size: 20px;
+    width: 40%;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+
+#form-icones-contato{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+.icone-form-contato{
+    height: 60px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+#icone-gmail {
+    background-color: white;
+    border-top: 5px outset red;
+    border-left: 5px outset steelblue;
+    border-bottom: 5px outset green;
+    border-right: 5px outset goldenrod;
+}
+#icone-gmail:hover{
+    box-shadow: 0px 0px 10px red;
+}
+
+#icone-linkedin {
+    background-color: lightblue;
+    border: 5px outset steelblue;
+}
+#icone-linkedin:hover{
+    box-shadow: 0px 0px 10px steelblue;
+}
+
+#icone-whatsapp {
+    background-color: green;
+    border: 5px outset green;
+}
+#icone-whatsapp:hover{
+    box-shadow: 0px 0px 10px lightgreen;
+}
+
+#icone-gmail:hover, #icone-linkedin:hover, #icone-whatsapp:hover{
+    padding: 8px;
+    transition: 0.2s;
 }
