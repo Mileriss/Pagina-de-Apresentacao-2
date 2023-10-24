@@ -55,10 +55,10 @@
             <h1 id="titulo-apresentacao">Seja bem vindo(a) ao meu portfólio!</h1>
             <p class="txt-apresentacao">Me chamo <span id="rafael-mileris" class="txt-apresentacao">Rafael Mileris</span> e sou um estudante de programação.</p>
             <div id="redes-contato" class="fundo-borrado">
-              <a href="https://github.com/Mileriss" target="_blank"><img id="icone-github" class="icone-redes" src="./Icones/icone-github-2.svg" alt="Icone do site Github" /></a>
-              <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img id="icone-gmail" class="icone-redes" src="./Icones/icone-gmail-preto.svg" alt="Icone do sistema de e-mails GMAIL" /></a>
-              <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img id="icone-linkedin" class="icone-redes" src="./Icones/icone-linkedin-preto.svg" alt="Icone da rede social Linkedin" /></a>
-              <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img id="icone-whatsapp" class="icone-redes" src="./Icones/icone-whatsapp-preto.svg" alt="Icone da rede social Whatsapp" /></a>
+              <a href="https://github.com/Mileriss" target="_blank"><img class="icone-redes" src="./Icones/icone-github-2.svg" alt="Icone do site Github" /></a>
+              <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img class="icone-redes" src="./Icones/icone-gmail-preto.svg" alt="Icone do sistema de e-mails GMAIL" /></a>
+              <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img class="icone-redes" src="./Icones/icone-linkedin-preto.svg" alt="Icone da rede social Linkedin" /></a>
+              <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img class="icone-redes" src="./Icones/icone-whatsapp-preto.svg" alt="Icone da rede social Whatsapp" /></a>
             </div>
           </div>
           <div id="div-img-apresentacao" class="container background-img-apresentacao">
@@ -89,8 +89,8 @@
                 <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
-                <b class="margem-habilidades" style="color: salmon">------ <span class="num-margem-habilidade">30%</span></b>
+                <img src="./Icones/icone-git.svg" class="icone-habilidades" alt="Icone da ferramenta de versionamento GIT" title="GIT" />
+                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
               </div>
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
@@ -99,6 +99,10 @@
               <div class="div-item-icone-habilidades">
                 <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
                 <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
+              </div>
+              <div class="div-item-icone-habilidades">
+                <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
+                <b class="margem-habilidades" style="color: salmon">------ <span class="num-margem-habilidade">30%</span></b>
               </div>
             </div>
             <div id="txt-sobre-mim" class="container fundo-borrado col">
@@ -282,7 +286,7 @@
 
     <!--CONTATO-->
     <section id="secao-contato" class="secoes">
-      <div id="contato" class="img-de-fundo">
+      <div id="contato" class="img-de-fundo espacamento-div">
         <h1 class="titulo-principal">Contato</h1>
         <!-- <div id="txt-introd-contato" class="container">
           <p class="txt-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ab dicta. Quibusdam temporibus consequuntur sapiente, ipsa minus fugit eveniet, dolorum voluptates amet cupiditate molestiae! Maxime porro dolorem fugiat enim.</p>
@@ -296,14 +300,21 @@
             <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
               <label class="form-lbl txt-secundario" for="nome"><span class="inp-obrigatorio">*</span>Nome:</label><br />
               <input class="form-inp txt-secundario" placeholder="Digite seu nome..." type="text" name="nome" maxlength="30" title="Máximo de 30 caracteres" required /><br />
-              <label class="form-lbl txt-secundario" for="contato">Contato:</label><br />
-              <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="tel" name="contato" maxlength="11" title="Sem espaços ou traços" /><br />
+              <label class="form-lbl txt-secundario" for="contato"><span class="inp-obrigatorio">*</span>Contato:</label><br />
+              <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="number" name="contato" maxlength="11" title="Sem espaços ou traços" required /><br />
               <label class="form-lbl txt-secundario" for="email">Email:</label><br />
               <input class="form-inp txt-secundario" placeholder="Digite seu e-mail..." type="email" name="email" autocomplete="email" title="Preencha este campo (Não obrigatório)" /><br />
               <label class="form-lbl txt-secundario" for="solicitacao"><span class="inp-obrigatorio">*</span>Solicitacao:</label><br />
               <textarea class="form-inp" placeholder="Deixe sua solicitação, sugestão, elogio ou critica aqui..." name="solicitacao" maxlength="250" title="Máximo de 250 caracteres" required></textarea><br />
+              <div id="btn-enviar">
+                <button class="form-btn" type="submit">Enviar</button>
+              </div>
 
-              <button id="btn-enviar" class="form-btn" type="submit">Enviar</button>
+              <div id="form-icones-contato">
+                <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img id="icone-gmail" class="icone-form-contato" src="./Icones/icone-gmail.svg" alt="Icone do sistema de e-mails GMAIL" title="Gmail" /></a>
+                <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img id="icone-linkedin" class="icone-form-contato" src="./Icones/icone-linkedin-2.svg" alt="Icone da rede social Linkedin" title="Linkedin" /></a>
+                <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img id="icone-whatsapp" class="icone-form-contato" src="./Icones/icone-whatsapp.svg" alt="Icone da rede social Whatsapp" title="Whatsapp" /></a>
+              </div>
             </form>
           </div>
         </div>
