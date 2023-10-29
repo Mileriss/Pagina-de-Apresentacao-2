@@ -20,24 +20,84 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar sticky-top">
+    <!-- <nav class="navbar sticky-top">
       <ul id="lista-navbar">
-        <a class="link-item-navbar" href="#apresentacao">
-          <li class="item-lista-navbar">Inicio</li>
+        <a class="link-item-navbar nav-link" href="#apresentacao">
+          <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Inicio</li>
         </a>
-        <a class="link-item-navbar" href="#secao-sobre-mim">
-          <li class="item-lista-navbar">Sobre mim</li>
+        <a class="link-item-navbar nav-link" href="#secao-sobre-mim">
+          <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Sobre mim</li>
         </a>
-        <a class="link-item-navbar" href="#objetivo">
-          <li class="item-lista-navbar">Objetivo</li>
+        <a class="link-item-navbar nav-link" href="#objetivo">
+          <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Objetivo</li>
         </a>
-        <a class="link-item-navbar" href="#projetos">
-          <li class="item-lista-navbar">Projetos</li>
+        <a class="link-item-navbar nav-link" href="#projetos">
+          <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Projetos</li>
         </a>
-        <a class="link-item-navbar" href="#contato">
-          <li class="item-lista-navbar">Contato</li>
-        </a>
+        <a class="link-item-navbar nav-link" href="#contato">
+          <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Contato</li>
+        </a> -->
+    <!--MUSICA DE FUNDO-->
+    <!-- <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">
+          <audio controls loop  id="item-musica-navbar"> 
+            <source src="./Musicas/CYBERPUNK 2077 SOUNDTRACK - ANTAGONISTIC by Chris Cardena and Sebastian Robertson Pacific Avenue [TubeRipper.com].m4a" type="audio/ogg" />
+          </audio>
+        </li>
       </ul>
+    </nav> -->
+
+    <!--NAVBAR - BOOTSTRAP-->
+    <!--Estrutura inicial-->
+    <nav id="navbar-principal" class="navbar navbar-dark bg-dark fixed-top">
+      <div id="div-navbar-principal" class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler bg-gradient" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <!--Cabeçalho da estrutura secundária-->
+          <div id="cabecalho-lista-navbar" class="offcanvas-header">
+            <a href="mailto:rafaelmileris15@gmail.com" target="_blank"><img id="icone-gmail" class="icone-form-contato" src="./Icones/icone-gmail.svg" alt="Icone do sistema de e-mails GMAIL" title="Gmail" /></a>
+            <a href="https://www.linkedin.com/in/rafael-mileris-a808b7239/" target="_blank"><img id="icone-linkedin" class="icone-form-contato" src="./Icones/icone-linkedin-2.svg" alt="Icone da rede social Linkedin" title="Linkedin" /></a>
+            <a href="https://api.whatsapp.com/send/?phone=011994521196" target="_blank"><img id="icone-whatsapp" class="icone-form-contato" src="./Icones/icone-whatsapp.svg" alt="Icone da rede social Whatsapp" title="Whatsapp" /></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!--Div da lista da estrutura secundaria-->
+          <div id="div-lista-navbar" class="offcanvas-body fundo-borrado img-de-fundo">
+            <div id="video-apresentacao">
+              <video autoplay muted loop>
+                <source src="./Videos/glitch-roxo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <!--Lista da estrutura secundária-->
+            <ul id="lista-navbar" class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <a class="link-item-navbar nav-link" href="#apresentacao">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Inicio</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#secao-sobre-mim">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Sobre mim</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#objetivo">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Objetivo</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#projetos">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Projetos</li>
+              </a>
+              <a class="link-item-navbar nav-link" href="#contato">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Contato</li>
+              </a>
+              <!--MUSICA DE FUNDO-->
+              <a class="link-item-navbar nav-link" href="#">
+                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">
+                  <audio controls loop id="item-musica-navbar" title="Agrega na imersão de visualizar a página!">
+                    <source src="./Musicas/CYBERPUNK 2077 SOUNDTRACK - ANTAGONISTIC by Chris Cardena and Sebastian Robertson Pacific Avenue [TubeRipper.com].m4a" type="audio/ogg" />
+                  </audio>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!--APRESENTAÇÃO-->
@@ -62,7 +122,7 @@
             </div>
           </div>
           <div id="div-img-apresentacao" class="container background-img-apresentacao">
-            <img id="img-apresentacao" src="./Imagens-sem-fundo/Rafael-Mileris-AI-3-sem-fundo.png" alt="Imagem de apresentação do perfil Rafael Mileris" title="Eu gerado por Inteligencia Artificial" />
+            <img id="img-apresentacao" src="./Imagens-sem-fundo/Rafael-Mileris-AI-4-sem-fundo.png" alt="Imagem de apresentação do perfil Rafael Mileris" title="Eu gerado por Inteligencia Artificial" />
           </div>
         </div>
       </div>
@@ -293,7 +353,7 @@
         </div> -->
         <div id="div-form" class="row container">
           <div id="txt-introd-form">
-            <p class="txt-principal txt-form-contato">Se desejar falar comigo, preencha o formulário ao lado e em breve eu entrarei em contato.</p>
+            <p class="txt-principal txt-form-contato">Conheça um novo profissional para a sua empresa, vamos conversar!</p>
             <p class="txt-principal txt-form-contato">Obrigado por ter visitado a minha página!</p>
           </div>
           <div id="form-contato">
