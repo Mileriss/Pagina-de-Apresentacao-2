@@ -163,34 +163,37 @@ a {
 }
 
 /*NAVBAR*/
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
+#navbar-principal{
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-#logotipo-rafael {
-    height: 100px;
-    width: auto;
-    border-radius: 20px;
-}
-
-#lista-navbar {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
+#cabecalho-lista-navbar{
+    background-color: black !important;
 }
 
 .link-item-navbar {
-    margin-right: 30px;
+    margin: 10px;
+    text-align: center;
 }
 
-.item-lista-navbar {
+.item-lista-navbar, .nav-item{
     list-style-type: none;
     font-weight: bold;
     color: white;
     font-size: 25px;
+    border: 2px solid dimgrey;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+.item-lista-navbar:hover{
+    transition: 0.2s;
+    background-color: purple;
+    border: 2px solid magenta;
+    box-shadow: 0px 0px 10px magenta;
+    text-shadow: 3px 3px 1px black;
+}
+
 
 /*APRESENTAÇÃO*/
 #apresentacao {
