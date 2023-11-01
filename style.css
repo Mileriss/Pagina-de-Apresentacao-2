@@ -274,23 +274,27 @@ a {
 
 /*! Div da imagem*/
 #div-img-apresentacao {
-    margin: 0 auto;    
+    margin: 0 auto; 
     position: relative;
-    /* right: 80px; */
-    height: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#background-img-apresentacao{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid purple;
     border-radius: 20px;
-    border: 2px solid purple;
     box-shadow: 0px 0px 20px purple;
 }
 
-.background-img-apresentacao{
-    background-image: url(https://cdn.pixabay.com/photo/2018/11/14/20/50/hd-3816045_1280.jpg);
-    background-position: center;
-}
-
 #img-apresentacao{
-    height: 100%;
     position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0px;
+    object-fit: cover;
 }   
 
 /* SOBRE MIM*/
