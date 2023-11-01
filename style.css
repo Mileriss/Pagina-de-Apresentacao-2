@@ -1,4 +1,11 @@
 /*FORMATAÇÃO GERAL*/
+:root{
+    --neon-lilas: #7d12ff;
+    --neon-roxo: #ab20fd;
+    --neon-rosa-claro: #ff00aa;
+    --neon-azul-escuro: #200589;
+    --neon-azul-claro: #00aaff;
+}
 body {
     scroll-behavior: smooth;
     /* background-color: black !important; */
@@ -171,6 +178,12 @@ a {
     background-color: black !important;
 }
 
+#div-lista-navbar{
+    background-image: url(https://cdn.pixabay.com/photo/2023/01/10/10/47/space-7709489_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .link-item-navbar {
     margin: 10px;
     text-align: center;
@@ -188,9 +201,9 @@ a {
 
 .item-lista-navbar:hover{
     transition: 0.2s;
-    background-color: purple;
-    border: 2px solid magenta;
-    box-shadow: 0px 0px 10px magenta;
+    background: linear-gradient(to right bottom, var(--neon-azul-escuro), var(--neon-lilas));
+    border: 2px solid var(--neon-azul-claro);
+    box-shadow: 0px 0px 10px var(--neon-azul-claro);
     text-shadow: 3px 3px 1px black;
 }
 
