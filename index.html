@@ -100,36 +100,65 @@
           <h1 class="titulo-principal">Sobre mim</h1>
           <div id="grid-sobre-mim" class="container-fluid row">
             <div id="habilidades" class="col-sm-3 fundo-borrado">
-              <h2 id="sub-titulo-habilidades" class="sub-titulo-brilhante">Habilidades</h2>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-html.svg" class="icone-habilidades" alt="Icone da Tecnologia Hypertext Markup Language (HTML)" title="HTML" />
-                <b class="margem-habilidades" style="color: lightgreen">------------ <span class="num-margem-habilidade">60%</span></b>
+              <h2 id="sub-titulo borda-sub-titulo-brilhante-habilidades" class="sub-titulo borda-sub-titulo-brilhante">Habilidades</h2>
+
+              <!--Frontend-->
+              <div id="habilidades-front">
+                <h3 class="titulo-bloco-habilidades">Front-end</h3>
+                <div id="frontend" class="bloco-habilidades">
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-html.svg" class="icone-habilidades" alt="Icone da Tecnologia Hypertext Markup Language (HTML)" title="HTML" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-avancado">60%</b>
+                  </div>
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-css.svg" class="icone-habilidades" alt="Icone da Tecnologia Cascading Style Sheets" title="CSS" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-intermediario">50%</b>
+                  </div>
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-javascript.svg" class="icone-habilidades" alt="Icone da linguagem de programação Javascript" title="Javascript" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                  </div>
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-estudando">30%</b>
+                  </div>
+                </div>
               </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-css.svg" class="icone-habilidades" alt="Icone da Tecnologia Cascading Style Sheets" title="CSS" />
-                <b class="margem-habilidades" style="color: yellow">---------- <span class="num-margem-habilidade">50%</span></b>
+
+              <!--Backend-->
+              <div id="habilidades-back">
+                <h3 class="titulo-bloco-habilidades">Back-end</h3>
+                <div id="backend" class="bloco-habilidades">
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                  </div>
+                </div>
               </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-javascript.svg" class="icone-habilidades" alt="Icone da linguagem de programação Javascript" title="Javascript" />
-                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
+
+              <!--Versionamento de código-->
+              <div id="habilidades-vers">
+                <h3 class="titulo-bloco-habilidades">Versionamento</h3>
+                <div id="verionamento" class="bloco-habilidades">
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-git.svg" class="icone-habilidades" alt="Icone da ferramenta de versionamento GIT" title="GIT" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                  </div>
+                </div>
               </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-git.svg" class="icone-habilidades" alt="Icone da ferramenta de versionamento GIT" title="GIT" />
-                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
-              </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
-                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
-              </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-python.svg" class="icone-habilidades" alt="Icone da linguagem de programação Python" title="Python" />
-                <b class="margem-habilidades" style="color: orange">-------- <span class="num-margem-habilidade">40%</span></b>
-              </div>
-              <div class="div-item-icone-habilidades">
-                <img src="./Icones/icone-bootstrap.svg" class="icone-habilidades" alt="Icone do framework Bootstrap" title="Bootstrap" />
-                <b class="margem-habilidades" style="color: salmon">------ <span class="num-margem-habilidade">30%</span></b>
+
+              <!--Banco de dados-->
+              <div id="habilidades-banco">
+                <h3 class="titulo-bloco-habilidades">Banco de dados</h3>
+                <div id="banco-de-dados" class="bloco-habilidades">
+                  <div class="item-bloco-habilidades">
+                    <img src="./Icones/icone-sql.svg" class="icone-habilidades" alt="Icone do banco de dados MySQL" title="MySQL" />
+                    <b class="margem-habilidades num-margem-habilidade margem-habilidade-iniciante">40%</b>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div id="txt-sobre-mim" class="container fundo-borrado col">
               <p class="txt-principal">Me chamo Rafael Mileris, tenho 26 anos, sou um estudante de programação e moro no bairro da Liberdade - Centro de SP.</p>
               <p class="txt-principal">
@@ -183,7 +212,7 @@
                 <!--PROJETO - CALCULADORA-->
                 <div class="front-item carousel-item active" data-bs-interval="100000">
                   <div class="div-titulo-projetos">
-                    <h2 class="sub-titulo-brilhante">Calculadora</h2>
+                    <h2 class="sub-titulo borda-sub-titulo-brilhante">Calculadora</h2>
                     <div class="tec-usada-item container">
                       <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
                       <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
@@ -208,7 +237,7 @@
                 <!--PROJETO - LOGIN, CADASTRO, SENHA-->
                 <div class="front-item carousel-item" data-bs-interval="100000">
                   <div class="div-titulo-projetos">
-                    <h2 class="sub-titulo-brilhante">Login - Cadastro - Senha</h2>
+                    <h2 class="sub-titulo borda-sub-titulo-brilhante">Login - Cadastro - Senha</h2>
                     <div class="tec-usada-item container">
                       <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
                       <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
@@ -230,7 +259,7 @@
                 <!--LISTA DE TAREFAS-->
                 <div class="front-item carousel-item" data-bs-interval="100000">
                   <div class="div-titulo-projetos">
-                    <h2 class="sub-titulo-brilhante">Lista de tarefas</h2>
+                    <h2 class="sub-titulo borda-sub-titulo-brilhante">Lista de tarefas</h2>
                     <div class="tec-usada-item container">
                       <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
                       <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
@@ -252,7 +281,7 @@
                 <!--PÁGINA TALKD V1-->
                 <div class="front-item carousel-item" data-bs-interval="100000">
                   <div class="div-titulo-projetos">
-                    <h2 class="sub-titulo-brilhante">Pagina Talkd V1</h2>
+                    <h2 class="sub-titulo borda-sub-titulo-brilhante">Pagina Talkd V1</h2>
                     <div class="tec-usada-item container">
                       <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
                       <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />
@@ -275,7 +304,7 @@
                 <!--PÁGINA TALKD V2-->
                 <div class="front-item carousel-item" data-bs-interval="100000">
                   <div class="div-titulo-projetos">
-                    <h2 class="sub-titulo-brilhante">Pagina Talkd V2</h2>
+                    <h2 class="sub-titulo borda-sub-titulo-brilhante">Pagina Talkd V2</h2>
                     <div class="tec-usada-item container">
                       <img class="icone-tec-item" src="./Icones/icone-html.svg" alt="Icone da tecnologia Hypertext Markup Language" title="Javascript" />
                       <img class="icone-tec-item" src="./Icones/icone-css.svg" alt="Icone da tecnologia Cascading Style Sheets (CSS)" title="CSS" />

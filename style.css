@@ -1,5 +1,5 @@
 /*FORMATAÇÃO GERAL*/
-:root{
+:root {
     --neon-lilas: #7d12ff;
     --neon-roxo: #ab20fd;
     --neon-rosa-claro: #ff00aa;
@@ -8,6 +8,7 @@
     --dourado: #daa520;
     --azul-midnight: #191970;
 }
+
 body {
     scroll-behavior: smooth;
     /* background-color: black !important; */
@@ -17,10 +18,23 @@ a {
     text-decoration: none !important;
 }
 
+/*FONTE EXTERNA - PIXELADO*/
+@font-face {
+    font-family: "PIXELADO";
+    src: url(./Fontes-externas/04b_30/PIXELADO.TTF);
+}
+
+/*FONTE EXTERNA - TECH*/
+@font-face {
+    font-family: "TECH";
+    src: url(./Fontes-externas/aldo_the_apache/TECH.ttf);
+}
+
 /*BOOTSTRAP*/
 
 /*! Icone para alterar slide na seção PROJETOS*/
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
     background-color: black !important;
     border: 2px solid white !important;
     border-radius: 10px;
@@ -58,44 +72,39 @@ a {
     padding-top: 50px;
 }
 
-.sub-titulo-brilhante {
-    font-family: 'TECH', 'Share Tech Mono', monospace;
+.borda-sub-titulo-brilhante {
     color: black;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 50px;
-    animation: borda-brilhante 5s ease-in-out alternate infinite;
+    animation: borda-brilhante 2s ease-in-out alternate infinite;
+    -webkit-text-stroke: 1px var(--neon-azul-claro);
 }
 
 @keyframes borda-brilhante {
     0% {
-        transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
-        -webkit-text-stroke: 1px orangered;
-        text-shadow: 2px 2px 3px orange;
+        text-shadow: -5px -5px 5px var(--neon-rosa-claro);
+        -webkit-text-stroke: 1px var(--neon-rosa-claro);
     }
 
     25% {
-        transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
-        -webkit-text-stroke: 1px steelblue;
-        text-shadow: 2px 2px 3px slateblue;
+
+        text-shadow: -2.5px -2.5px 5px var(--neon-lilas);
+        -webkit-text-stroke: 1px var(--neon-lilas);
     }
 
     50% {
-        transition: cubic-bezier(0.86, 0, 0.07, 1);
-        -webkit-text-stroke: 1px goldenrod;
-        text-shadow: 2px 2px 3px yellow;
+        text-shadow: 0px 0px 5px var(--neon-roxo);
+        -webkit-text-stroke: 1px var(--neon-roxo);
     }
 
     75% {
-        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        -webkit-text-stroke: 1px rebeccapurple;
-        text-shadow: 2px 2px 3px purple;
+
+        text-shadow: 2.5px 2.5px 0px var(--neon-lilas);
+        -webkit-text-stroke: 1px var(--neon-lilas);
     }
 
     100% {
         transition: cubic-bezier(0.77, 0, 0.175, 1);
-        -webkit-text-stroke: 1px blue;
-        text-shadow: 2px 2px 3px yellow;
+        text-shadow: 5px 5px 0px var(--neon-rosa-claro);
+        -webkit-text-stroke: 1px var(--neon-rosa-claro);
     }
 
 }
@@ -132,23 +141,6 @@ a {
     background-position: center;
 }
 
-/*! Configuração do video utilizado como papel de parede nas seções*/
-#video-apresentacao {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-/*! Fixar conteudo na área do video (caso haja)*/
-.fixar-conteudo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /*! Formatação para escurecer o fundo de alguma div*/
 .fundo-escuro {
     background-color: rgba(0, 0, 0, 0.5);
@@ -159,28 +151,18 @@ a {
     backdrop-filter: blur(5px);
 }
 
-/*FONTE EXTERNA - PIXELADO*/
-@font-face {
-    font-family: "PIXELADO";
-    src: url(./Fontes-externas/04b_30/PIXELADO.TTF);
-}
 
-/*FONTE EXTERNA - TECH*/
-@font-face {
-    font-family: "TECH";
-    src: url(./Fontes-externas/aldo_the_apache/TECH.ttf);
-}
 
 /*NAVBAR*/
-#navbar-principal{
+#navbar-principal {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-#cabecalho-lista-navbar{
+#cabecalho-lista-navbar {
     background-color: black !important;
 }
 
-#div-lista-navbar{
+#div-lista-navbar {
     background-image: url(https://cdn.pixabay.com/photo/2023/01/10/10/47/space-7709489_1280.jpg);
     background-image: url(https://cdn.pixabay.com/photo/2023/07/09/23/14/cosmic-8117067_1280.jpg);
     background-position: center;
@@ -192,7 +174,8 @@ a {
     text-align: center;
 }
 
-.item-lista-navbar, .nav-item{
+.item-lista-navbar,
+.nav-item {
     list-style-type: none;
     font-weight: bold;
     color: white;
@@ -202,7 +185,7 @@ a {
     border-radius: 10px;
 }
 
-.item-lista-navbar:hover{
+.item-lista-navbar:hover {
     transition: 0.2s;
     background: linear-gradient(to right bottom, var(--neon-azul-escuro), var(--neon-lilas));
     border: 2px solid var(--neon-azul-claro);
@@ -292,13 +275,13 @@ a {
 
 /*! Div da imagem*/
 #div-img-apresentacao {
-    margin: 0 auto; 
+    margin: 0 auto;
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-#background-img-apresentacao{
+#background-img-apresentacao {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -307,13 +290,13 @@ a {
     box-shadow: 0px 0px 20px purple;
 }
 
-#img-apresentacao{
+#img-apresentacao {
     position: absolute;
     height: 100%;
     width: 100%;
     right: 0px;
     object-fit: cover;
-}   
+}
 
 /* SOBRE MIM*/
 #sobre-mim {
@@ -325,7 +308,7 @@ a {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/07/09/23/14/cosmic-8117067_1280.jpg); */
     /* background-image: url(https://i.gifer.com/75lf.gif); */
     background-color: black;
-    
+
 }
 
 #bloco-sobre-mim {}
@@ -335,6 +318,8 @@ a {
     margin: 0 auto;
     grid-gap: 10px;
 }
+
+/*! Habilidades*/
 
 #habilidades {
     background-color: rgba(0, 0, 0, 0.5);
@@ -346,13 +331,13 @@ a {
 
 @keyframes luz-piscando-habilidades {
     0% {
-        box-shadow: 0px 0px 5px lightblue;
+        box-shadow: 0px 0px 5px var(--neon-azul-escuro);
         transition: 5ms;
 
     }
 
     100% {
-        box-shadow: 0px 0px 10px lightblue;
+        box-shadow: 0px 0px 10px var(--neon-azul-claro);
         transition: 20ms;
     }
 
@@ -365,7 +350,29 @@ a {
 }
 
 #habilidades>* {
-    margin-bottom: 15px;
+    margin: 10px auto;
+}
+
+.titulo-bloco-habilidades {
+    font-family: 'PIXELADO', 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+.bloco-habilidades {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.item-bloco-habilidades {
+    padding: 10px;
+    width: 100%;
 }
 
 .icone-habilidades {
@@ -378,6 +385,26 @@ a {
     text-shadow: 2px 2px 3px black;
 }
 
+.margem-habilidades::before {
+    content: " - ";
+}
+
+.margem-habilidade-estudando {
+    color: salmon;
+}
+
+.margem-habilidade-iniciante {
+    color: orange;
+}
+
+.margem-habilidade-intermediario {
+    color: yellow;
+}
+
+.margem-habilidade-avancado {
+    color: lightgreen;
+}
+
 .num-margem-habilidade {
     font-family: 'PIXELADO', 'Courier New', Courier, monospace;
     text-shadow: 5px 5px 5px black;
@@ -385,10 +412,11 @@ a {
     font-weight: normal;
 }
 
+/*! Sobre mim*/
 #txt-sobre-mim {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 10px double darkmagenta;
-    box-shadow: 0px 0px 10px magenta;
+    border: 10px double var(--neon-roxo);
+    box-shadow: 0px 0px 10px var(--neon-roxo);
     border-radius: 30px;
     padding: 50px;
     animation: luz-piscando-sobre-mim 1s alternate ease-in-out infinite;
@@ -396,13 +424,13 @@ a {
 
 @keyframes luz-piscando-sobre-mim {
     0% {
-        box-shadow: 0px 0px 5px magenta;
+        box-shadow: 0px 0px 5px var(--neon-roxo);
         transition: 5ms;
 
     }
 
     100% {
-        box-shadow: 0px 0px 10px magenta;
+        box-shadow: 0px 0px 10px var(--neon-rosa-claro);
         transition: 20ms;
     }
 
@@ -518,11 +546,12 @@ a {
 }
 
 @keyframes borda-gradiente {
-    0%{
+    0% {
         box-shadow: 0px 0px 10px darkgreen;
         transition: 5ms;
     }
-    100%{
+
+    100% {
         box-shadow: 0px 0px 20px darkgreen;
         transition: 10ms;
     }
@@ -602,52 +631,52 @@ a {
 
 /* CONTATO*/
 
-#contato{
+#contato {
     background-color: black;
 }
 
-#div-form{
+#div-form {
     display: grid;
     grid-template-columns: 60% 40%;
     border: 2px solid red;
     margin: 0 auto;
 }
 
-#txt-introd-form{
+#txt-introd-form {
     padding: 50px;
     background-color: green;
 }
 
-.txt-form-contato{
+.txt-form-contato {
     font-size: 40px;
 }
 
-#form-contato{
+#form-contato {
     background-color: black;
     padding: 20px;
 }
 
-.form-lbl{
+.form-lbl {
     font-size: 30px;
 }
 
-.form-inp{
+.form-inp {
     color: black;
     width: 100%;
 }
 
-.inp-obrigatorio{
+.inp-obrigatorio {
     color: goldenrod;
 }
 
-#btn-enviar{
+#btn-enviar {
     text-align: center;
     width: auto;
     margin: 0 auto;
     margin-top: 20px;
 }
 
-.form-btn{
+.form-btn {
     font-size: 20px;
     width: 40%;
     border: 2px solid blue;
@@ -655,7 +684,7 @@ a {
 }
 
 
-#form-icones-contato{
+#form-icones-contato {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -666,7 +695,7 @@ a {
 }
 
 
-.icone-form-contato{
+.icone-form-contato {
     height: 60px;
     padding: 5px;
     border-radius: 10px;
@@ -680,7 +709,8 @@ a {
     border-bottom: 5px outset green;
     border-right: 5px outset goldenrod;
 }
-#icone-gmail:hover{
+
+#icone-gmail:hover {
     box-shadow: 0px 0px 10px red;
 }
 
@@ -688,7 +718,8 @@ a {
     background-color: lightblue;
     border: 5px outset steelblue;
 }
-#icone-linkedin:hover{
+
+#icone-linkedin:hover {
     box-shadow: 0px 0px 10px steelblue;
 }
 
@@ -696,11 +727,14 @@ a {
     background-color: green;
     border: 5px outset green;
 }
-#icone-whatsapp:hover{
+
+#icone-whatsapp:hover {
     box-shadow: 0px 0px 10px lightgreen;
 }
 
-#icone-gmail:hover, #icone-linkedin:hover, #icone-whatsapp:hover{
+#icone-gmail:hover,
+#icone-linkedin:hover,
+#icone-whatsapp:hover {
     padding: 8px;
     transition: 0.2s;
 }
