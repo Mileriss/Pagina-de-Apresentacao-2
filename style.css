@@ -5,6 +5,8 @@
     --neon-rosa-claro: #ff00aa;
     --neon-azul-escuro: #200589;
     --neon-azul-claro: #00aaff;
+    --dourado: #daa520;
+    --azul-midnight: #191970;
 }
 body {
     scroll-behavior: smooth;
@@ -216,7 +218,7 @@ a {
     /* background-image: url(https://cdn.pixabay.com/photo/2023/05/13/16/30/synthwave-7990877_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2022/11/23/08/58/stars-7611516_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2019/01/19/13/12/synthwave-3941721_1280.jpg); */
-    background-color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2018/12/18/22/29/background-3883181_1280.jpg);
 }
 
 /*! Div geral*/
@@ -226,7 +228,7 @@ a {
     justify-content: space-between;
     margin: 0 auto;
     padding: 40px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /*! Div dos textos e icones*/
@@ -251,8 +253,8 @@ a {
 
 #rafael-mileris {
     font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: goldenrod;
-    text-shadow: 3px 3px 3px blue;
+    color: var(--dourado);
+    text-shadow: 3px 3px 0px var(--azul-midnight);
 }
 
 #redes-contato {
@@ -261,22 +263,22 @@ a {
     justify-content: space-around;
     margin: 0 auto;
     height: auto;
-    width: 40%;
-    /* background: linear-gradient(to right, black, rgb(220, 40, 40), steelblue, lightgreen); */
+    width: 50%;
     padding: 10px;
-    border: 5px ridge black;
     border-radius: 10px;
+    border: 2px solid var(--neon-lilas);
+    box-shadow: 0px 0px 10px var(--neon-lilas);
 }
 
 .icone-redes {
     margin: 0 auto;
     padding: 5px;
     height: 80px;
-    border: 5px outset black;
+    border: 3px outset black;
     border-radius: 10px;
-    background-color: mediumslateblue;
-    background: linear-gradient(to right bottom, mediumslateblue, lightpink, mediumslateblue);
-    box-shadow: 0px 0px 10px purple;
+    /* background: linear-gradient(to right bottom, mediumslateblue, lightpink, mediumslateblue); */
+    background: linear-gradient(to bottom, var(--neon-roxo), var(--neon-azul-claro));
+    box-shadow: 0px 0px 10px var(--neon-lilas);
 }
 
 .icone-redes:hover {
