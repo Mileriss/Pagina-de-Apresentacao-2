@@ -57,8 +57,8 @@ a {
 
 /*! Espaçamento padrão para separar as divs*/
 .espacamento-div {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /*! Titulo principal das seções*/
@@ -151,9 +151,11 @@ a {
 
 /*! Formatação para escurecer o fundo de alguma div*/
 .fundo-escuro {
+    border: 3px solid black;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/*! Formatação para escurecer e borrar o fundo de alguma div*/
 .fundo-borrado {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -237,8 +239,6 @@ a {
     justify-content: space-between;
     margin: 0 auto;
     padding: 40px;
-    padding-top: 80px;
-    /* background-color: black; */
 }
 
 /*! Div dos textos e icones*/
@@ -438,13 +438,13 @@ a {
 }
 
 .num-margem-habilidade {
-    font-family: 'PIXELADO', 'Courier New', Courier, monospace;
+    /* font-family: 'PIXELADO', 'Courier New', Courier, monospace; */
+    font-family: "TECH", 'Courier New', Courier, monospace;
     text-shadow: 5px 5px 5px black;
     font-size: 25px;
     font-weight: normal;
 }
 
-/*! Sobre mim*/
 #txt-sobre-mim {
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px double var(--neon-roxo);
