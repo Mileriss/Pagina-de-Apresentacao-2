@@ -4,11 +4,18 @@
 ╚  ╚═╝╩╚═╩ ╩╩ ╩ ╩ ╩ ╩╚═╝╩ ╩╚═╝  ╚═╝╚═╝╩╚═╩ ╩╩═╝
 */
 :root {
-    --neon-lilas: #7d12ff;
-    --neon-roxo: #ab20fd;
-    --neon-rosa-claro: #ff00aa;
+    /* Cores Neon */
+    --neon-roxo: #7d12ff;
+    --neon-roxo-escuro: #3d144c;
+    --neon-lilas: #ab20fd;
+    --neon-rosa-claro: #e900ff;
+    --neon-rosa-shock: #f52789;
+    --neon-azul-claro: #1685f8;
     --neon-azul-escuro: #200589;
-    --neon-azul-claro: #00aaff;
+    --neon-verde-claro: #a6fd29;
+    --neon-verde: #4eff00;
+
+    /* Outras cores*/
     --dourado: #daa520;
     --azul-midnight: #191970;
 }
