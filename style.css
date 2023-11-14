@@ -122,21 +122,22 @@ a {
 
 /*! Texto de resumo nas seções*/
 .txt-principal {
-    font-size: 26px;
-    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    font-family: 'Share Tech', 'Kanit', sans-serif;
     color: white;
 }
 
 /*! Texto usado nos grids e blocos*/
 .txt-secundario {
-    font-family: 'Share Tech', sans-serif;
+    font-size: 26px;
+    font-family: 'Kanit', 'Share Tech', sans-serif;
     color: white;
 }
 
 /*! Texto com fonte PIXELADA para destaque de palavras*/
 .txt-destaque {
     font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 /*! Formatação para as tecnologias detacadas nos textos*/
@@ -386,7 +387,6 @@ a {
 }
 
 .fundo-habilidades{
-    background: linear-gradient(to right bottom, var(--neon-azul-escuro), var(--neon-lilas));
     border: 3px solid var(--neon-lilas);
     border-radius: 10px;
 }
