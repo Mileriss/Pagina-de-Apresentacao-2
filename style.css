@@ -122,7 +122,7 @@ a {
 
 /*! Texto de resumo nas seções*/
 .txt-principal {
-    font-size: 35px;
+    font-size: 36px;
     font-family: 'Share Tech', 'Kanit', sans-serif;
     color: white;
 }
@@ -497,15 +497,8 @@ a {
 }
 
 #div-txt-objetivo {
-    font-size: 30px;
     text-align: justify;
-    /* background-color: red; */
     padding: 20px;
-}
-
-.txt-objetivo {
-    /* padding-top: 150px; */
-    color: white;
 }
 
 /*
