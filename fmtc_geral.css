@@ -143,9 +143,48 @@ a {
     font-size: 28px;
 }
 
+/* Tecnologias em destaque*/
+.html{
+    color: orangered;
+    text-shadow: 0px 0px 10px orangered !important;
+}
+.css{
+    color: steelblue;
+    text-shadow: 0px 0px 10px steelblue !important;
+}
+.javascript{
+    color: goldenrod;
+    text-shadow: 0px 0px 10px goldenrod !important;
+}
+.react{
+    color: darkcyan;
+    text-shadow: 0px 0px 10px darkcyan !important;
+}
+.nodejs{
+    color: darkgreen;
+    text-shadow: 0px 0px 10px darkgreen !important;
+}
+.sql{
+    color: lightslategrey;
+    text-shadow: 0px 0px 10px lightslategrey !important;
+}
+.csharp{
+    color: blueviolet;
+    text-shadow: 0px 0px 10px blueviolet !important;
+}
+.py{
+    color: gold;
+    text-shadow: 0px 0px 10px gold !important;
+}
+.thon{
+    color: blue;
+    text-shadow: 0px 0px 10px blue !important;
+}
+
 /*! Formatação para as tecnologias detacadas nos textos*/
 .tecnologia-destaque {
-    text-shadow: 5px 5px 5px black
+    text-shadow: 5px 5px 5px black;
+    -webkit-text-stroke: 1.5px black;
 }
 
 /*! Configuração do papel de parede das seções*/
