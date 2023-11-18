@@ -5,16 +5,16 @@
 */
 :root {
     /*Paleta de cores neon*/
-    --neon-roxo: #7d12ff;
-    --neon-roxo-escuro: #3d144c;
-    --neon-lilas: #ab20fd;
-    --neon-rosa-claro: #e900ff;
-    --neon-rosa-shock: #f52789;
-    --neon-azul-claro: #1685f8;
-    --neon-azul-escuro: #200589;
-    --neon-verde-claro: #a6fd29;
-    --neon-verde: #4eff00;
-    --neon-amarelo: #faeb2c;
+    --neon-roxo: rgb(126, 20, 255);
+    --neon-roxo-escuro: rgb(62, 20, 77);
+    --neon-lilas: rgb(172, 33, 253);
+    --neon-rosa-claro: rgb(234, 0, 255);
+    --neon-rosa-shock: rgb(245, 41, 139);
+    --neon-azul-claro: rgb(22, 131, 248);
+    --neon-azul-escuro: rgb(32, 5, 138);
+    --neon-verde-claro: rgb(165, 253, 43);
+    --neon-verde: rgb(76, 255, 0);
+    --neon-amarelo: rgb(250, 236, 46);
 }
 
 body {
@@ -70,11 +70,10 @@ a {
 /*! Titulo principal das seções*/
 .titulo-principal {
     font-family: 'Tektur', cursive;
-    color: white;
-    text-shadow: 5px 5px 0px black;
+    font-size: 80px;
+    color: black;
     text-align: center;
     padding-top: 50px;
-    font-size: 80px;
 }
 
 /*! Sub-titulo de cada seção*/
