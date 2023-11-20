@@ -38,12 +38,6 @@ a {
     src: url(./Fontes-externas/aldo_the_apache/TECH.ttf);
 }
 
-/*FONTE EXTERNA - SILKSCREEN*/
-@font-face {
-    font-family: 'Silkscreen', sans-serif;
-    src: url();
-}
-
 /*BOOTSTRAP*/
 
 /*! Icone para alterar slide na seção PROJETOS*/
@@ -141,6 +135,14 @@ a {
 .txt-destaque {
     font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;
+}
+
+/*! Texto usado nas descrições*/
+.txt-descricao{
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
 }
 
 /* Tecnologias em destaque*/
@@ -265,6 +267,10 @@ a {
 .amarelo{
     border-color: var(--neon-amarelo);
     box-shadow: 0px 0px 10px var(--neon-amarelo);
+}
+.preto{
+    border-color: black;
+    box-shadow: 0px 0px 50px black;
 }
 
 /*! Animação para borda com variação de roxo*/

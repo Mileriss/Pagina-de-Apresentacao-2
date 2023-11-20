@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fmtc_geral.css">
+    <link rel="stylesheet" href="fmtc_geral.css" />
     <link rel="icon" href="./Icones/icone-aba.png" />
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -13,7 +13,7 @@
     <!--FONT AWESOME-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Pixelify+Sans&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen&family=Tektur:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Pixelify+Sans&family=Share+Tech&family=Share+Tech+Mono&family=Silkscreen&family=Zen+Dots&family=Tektur:wght@700&display=swap" rel="stylesheet" />
     <!--SCROLL REVEAL-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -47,27 +47,19 @@
             <!--Lista da estrutura secundária-->
             <ul id="lista-navbar" class="navbar-nav justify-content-center flex-grow-1 pe-3">
               <a class="link-item-navbar nav-link" href="#apresentacao">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Inicio</li>
+                <li id="navbar-apresentacao" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao roxo">Apresentação</li>
               </a>
               <a class="link-item-navbar nav-link" href="#secao-sobre-mim">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Sobre mim</li>
+                <li id="navbar-sobre-mim" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao rosa-shock">Sobre mim</li>
               </a>
               <a class="link-item-navbar nav-link" href="#objetivo">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Objetivo</li>
+                <li id="navbar-objetivo" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao azul-claro">Objetivo</li>
               </a>
               <a class="link-item-navbar nav-link" href="#projetos">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Projetos</li>
+                <li id="navbar-projetos" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao verde-claro">Projetos</li>
               </a>
               <a class="link-item-navbar nav-link" href="#contato">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">Contato</li>
-              </a>
-              <!--MUSICA DE FUNDO-->
-              <a class="link-item-navbar nav-link" href="#">
-                <li class="item-lista-navbar fundo-borrado txt-secundario nav-item">
-                  <audio controls loop id="item-musica-navbar" title="Agrega na imersão de visualizar a página!">
-                    <source src="./Musicas/CYBERPUNK 2077 SOUNDTRACK - ANTAGONISTIC by Chris Cardena and Sebastian Robertson Pacific Avenue [TubeRipper.com].m4a" type="audio/ogg" />
-                  </audio>
-                </li>
+                <li id="navbar-contato" class="item-lista-navbar fundo-borrado txt-secundario nav-item borda-padrao amarelo">Contato</li>
               </a>
             </ul>
           </div>
@@ -80,7 +72,7 @@
       ╠═╣╠═╝╠╦╝║╣ ╚═╗║╣ ║║║ ║ ╠═╣║  ╠═╣║ ║
       ╩ ╩╩  ╩╚═╚═╝╚═╝╚═╝╝╚╝ ╩ ╩ ╩╚═╝╩ ╩╚═╝   
     -->
-    <section id="secao-apresentacao" class="secoes">
+    <section id="secao-apresentacao" class="secoes preto">
       <!--Conteudo apresentação-->
       <div id="apresentacao" class="img-de-fundo espacamento-div">
         <div id="bloco-apresentacao" class="fundo-escuro">
@@ -107,7 +99,7 @@
       ╚═╗║ ║╠╩╗╠╦╝║╣   ║║║║║║║
       ╚═╝╚═╝╚═╝╩╚═╚═╝  ╩ ╩╩╩ ╩ 
     -->
-    <section id="secao-sobre-mim" class="secoes">
+    <section id="secao-sobre-mim" class="secoes preto">
       <div id="sobre-mim" class="img-de-fundo">
         <div id="bloco-sobre-mim" class="espacamento-div">
           <h1 id="titulo-sobre-mim" class="titulo-principal">Sobre mim</h1>
@@ -181,7 +173,7 @@
             </div>
 
             <div id="txt-sobre-mim" class="container fundo-borrado borda-dupla rosa-shock">
-              <p class="txt-principal">Passo boa parte do meu dia trabalhando e estudando sobre a tecnologia que estou focado em aprender, atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque tecnologia-destaque html" >HTML</span>, <span class="txt-destaque tecnologia-destaque css">CSS</span> e <span class="txt-destaque tecnologia-destaque javascript">Javascript</span>.</p>
+              <p class="txt-principal">Passo boa parte do meu dia trabalhando e estudando sobre a tecnologia que estou focado em aprender, atualmente estou dando mais prioridade para o front-end com <span class="txt-destaque tecnologia-destaque html">HTML</span>, <span class="txt-destaque tecnologia-destaque css">CSS</span> e <span class="txt-destaque tecnologia-destaque javascript">Javascript</span>.</p>
               <br />
               <p class="txt-principal">Sou novo nesse universo da tecnologia, finalizei a minha graduação em <i>Análise e Desenvolvimento de Sistemas</i> no fim de 2023 e antes disso não sabia nada sobre o assunto, acabei conhecendo a programação através de videos na internet e depois que criei meu primeiro algoritmo eu não quis mais parar.</p>
               <br />
@@ -197,7 +189,7 @@
       ║ ║╠╩╗ ║║╣  ║ ║╚╗╔╝║ ║
       ╚═╝╚═╝╚╝╚═╝ ╩ ╩ ╚╝ ╚═╝ 
     -->
-    <section id="secao-objetivo" class="secoes">
+    <section id="secao-objetivo" class="secoes preto">
       <div id="objetivo" class="img-de-fundo espacamento-div">
         <h1 id="titulo-objetivo" class="titulo-principal">Objetivo...</h1>
         <div id="bloco-item-objetivo" class="container-fluid fundo-borrado borda-dupla azul-claro">
@@ -208,10 +200,7 @@
           <div id="div-txt-objetivo">
             <p class="txt-principal">Meu objetivo atual é realizar a pós-graduação em <span class="txt-destaque tecnologia-destaque" style="color: lightblue">Engenharia de Software</span> e continuar estudando sobre os assuntos que me interessam na programação.</p>
             <p class="txt-principal">Além de <span class="txt-destaque tecnologia-destaque html">HTML</span>, <span class="txt-destaque tecnologia-destaque css">CSS</span> e <span class="txt-destaque tecnologia-destaque javascript">Javascript</span>, eu pretendo aprimorar os conhecimentos no Front-end com <span class="txt-destaque tecnologia-destaque react">React</span> e alguns frameworks (ainda não definidos).</p>
-            <p class="txt-principal">
-              Tambem desejo estudar mais sobre outras tecnologias e linguagens como o <span class="txt-destaque tecnologia-destaque nodejs">Node.JS</span>, <span class="txt-destaque tecnologia-destaque sql">SQL</span>, <span class="txt-destaque tecnologia-destaque csharp">C#</span> e <span class="txt-destaque tecnologia-destaque py">Py</span
-              ><span class="txt-destaque tecnologia-destaque thon">thon</span>.
-            </p>
+            <p class="txt-principal">Tambem desejo estudar mais sobre outras tecnologias e linguagens como o <span class="txt-destaque tecnologia-destaque nodejs">Node.JS</span>, <span class="txt-destaque tecnologia-destaque sql">SQL</span>, <span class="txt-destaque tecnologia-destaque csharp">C#</span> e <span class="txt-destaque tecnologia-destaque py">Py</span><span class="txt-destaque tecnologia-destaque thon">thon</span>.</p>
           </div>
         </div>
       </div>
@@ -222,21 +211,21 @@
       ╠═╝╠╦╝║ ║ ║║╣  ║ ║ ║╚═╗
       ╩  ╩╚═╚═╝╚╝╚═╝ ╩ ╚═╝╚═╝  
     -->
-    <section id="secao-projetos" class="secoes">
+    <section id="secao-projetos" class="secoes preto">
       <div id="projetos" class="img-de-fundo espacamento-div">
         <h1 id="titulo-projetos" class="titulo-principal">Projetos</h1>
-        <div id="div-introd-projetos" class="txt-principal container fundo-borrado">
+        <div id="div-introd-projetos" class="txt-principal container fundo-borrado borda-dupla verde-claro">
           <p class="txt-principal">Todos os projetos dessa seção foram criados em diferentes partes do meu aprendizado, alguns estão mais simples justamente porque foi o que eu consegui elaborar enquanto ainda estava no inicio dos estudos sobre programação.</p>
           <p class="txt-principal">Nenhum projeto foi copiado da internet, criei todos inteiramente sozinho pegando apenas referencias de projetos básicos em outros perfis.</p>
         </div>
         <div id="grid-projetos" class="">
           <!--FRONTEND-->
-          <div id="projetos-frontend" class="container fundo-borrado">
+          <div id="projetos-frontend" class="container fundo-borrado borda-padrao verde-claro">
             <!--Carousel Front-->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <!--PROJETO - CALCULADORA-->
-                <div class="front-item carousel-item active" data-bs-interval="100000">
+                <div class="front-item carousel-item active" data-bs-interval="80000">
                   <div class="div-titulo-projetos">
                     <h2 class="sub-titulo deslocamento-txt">Calculadora</h2>
                     <div class="tec-usada-item container">
@@ -249,19 +238,16 @@
                     <img class="item-img-projetos" src="./Imagens-projetos/Calculadora.png" alt="Projeto Calculadora" />
                   </div>
                   <div class="desc-item">
-                    <p class="txt-desc-item">
-                      Uma calculadora que realiza as operações básicas de matemática (Soma, Subtração, Multiplicação e Divisão) e com recurso para alterar o estilo com as cores: <span style="color: steelblue; font-weight: bold">Padrão</span>, <span style="color: red; font-weight: bold">Vermelho</span>, <span style="color: green; font-weight: bold">Verde</span>, <span style="color: purple; font-weight: bold">Roxo</span>, <span style="color: darkslategray; font-weight: bold">Preto</span> e
-                      <span style="color: yellow; -webkit-text-stroke: 0.002px white; font-weight: bold">Alto contraste</span> .
-                    </p>
-                    <div class="btn-projetos">
-                      <a href="https://mileriss.github.io/Calculadora/" target="_blank"><button class="btn-desc-projetos txt-destaque">Usar projeto</button></a>
-                      <a href="https://github.com/Mileriss/Calculadora" target="_blank"><button class="btn-desc-projetos txt-destaque">Repositorio</button></a>
-                    </div>
+                    <p class="txt-descricao">Uma calculadora que realiza as operações básicas da matemática (Soma, Subtração, Multiplicação e Divisão) e com recurso para alterar o estilo com outras cores: Padrão (Azul), Vermelho, Verde, Roxo, Preto ou Alto Contraste</p>
+                  </div>
+                  <div class="btn-projetos">
+                    <a href="https://mileriss.github.io/Calculadora/" target="_blank"><button class="btn-desc-projetos borda-padrao rosa-shock txt-descricao">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Calculadora" target="_blank"><button class="btn-desc-projetos borda-padrao roxo txt-descricao">Repositorio</button></a>
                   </div>
                 </div>
 
                 <!--PROJETO - LOGIN, CADASTRO, SENHA-->
-                <div class="front-item carousel-item" data-bs-interval="100000">
+                <div class="front-item carousel-item" data-bs-interval="80000">
                   <div class="div-titulo-projetos">
                     <h2 class="sub-titulo deslocamento-txt">Login - Cadastro - Senha</h2>
                     <div class="tec-usada-item container">
@@ -274,16 +260,16 @@
                     <img class="item-img-projetos" src="./Imagens-projetos/Login-Cadastro-Senha.png" alt="Projeto de tela de login, cadastro e senha" />
                   </div>
                   <div class="desc-item">
-                    <p class="txt-desc-item">Criei 3 telas para praticar o uso de validações básicas de formulário, onde é possível realizar o cadastro seguindo determinadas condições, alterar a senha cadastrada de acordo com determinados parametros e realizar o login.</p>
-                    <div class="btn-projetos">
-                      <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Tela_Login_Cadastro/blob/main/Tela%20Login/tela_login.html" target="_blank"><button class="btn-desc-projetos txt-destaque">Usar projeto</button></a>
-                      <a href="https://github.com/Mileriss/Tela_Login_Cadastro" target="_blank"><button class="btn-desc-projetos txt-destaque">Repositorio</button></a>
-                    </div>
+                    <p class="txt-descricao">Criei 3 telas para praticar o uso de validações básicas de formulário, onde é possível realizar o cadastro seguindo determinadas condições, alterar a senha cadastrada de acordo com determinados parametros e realizar o login.</p>
+                  </div>
+                  <div class="btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Tela_Login_Cadastro/blob/main/Tela%20Login/tela_login.html" target="_blank"><button class="btn-desc-projetos borda-padrao rosa-shock txt-descricao">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Tela_Login_Cadastro" target="_blank"><button class="btn-desc-projetos borda-padrao roxo txt-descricao">Repositorio</button></a>
                   </div>
                 </div>
 
                 <!--LISTA DE TAREFAS-->
-                <div class="front-item carousel-item" data-bs-interval="100000">
+                <div class="front-item carousel-item" data-bs-interval="80000">
                   <div class="div-titulo-projetos">
                     <h2 class="sub-titulo deslocamento-txt">Lista de tarefas</h2>
                     <div class="tec-usada-item container">
@@ -296,16 +282,16 @@
                     <img class="item-img-projetos" src="./Imagens-projetos/Lista-tarefas.png" alt="Projeto Lista de tarefas" />
                   </div>
                   <div class="desc-item">
-                    <p class="txt-desc-item">Um sistema CRUD bem simples para criar, visualizar, alterar e deletar tarefas de uma lista. É uma tela simples, porem, existe uma programação com Javascript que permite o usuário ter maior controle sobre as atividades inseridas.</p>
-                    <div class="btn-projetos">
-                      <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Lista_de_tarefas/blob/main/index.html" target="_blank"><button class="btn-desc-projetos txt-destaque">Usar projeto</button></a>
-                      <a href="https://github.com/Mileriss/Lista_de_tarefas" target="_blank"><button class="btn-desc-projetos txt-destaque">Repositorio</button></a>
-                    </div>
+                    <p class="txt-descricao">Um sistema CRUD bem simples para criar, visualizar, alterar e deletar tarefas de uma lista. É uma tela simples, porem, existe uma programação com Javascript que permite o usuário ter maior controle sobre as atividades inseridas.</p>
+                  </div>
+                  <div class="btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Lista_de_tarefas/blob/main/index.html" target="_blank"><button class="btn-desc-projetos borda-padrao rosa-shock txt-descricao">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Lista_de_tarefas" target="_blank"><button class="btn-desc-projetos borda-padrao roxo txt-descricao">Repositorio</button></a>
                   </div>
                 </div>
 
                 <!--PÁGINA TALKD V1-->
-                <div class="front-item carousel-item" data-bs-interval="100000">
+                <div class="front-item carousel-item" data-bs-interval="80000">
                   <div class="div-titulo-projetos">
                     <h2 class="sub-titulo deslocamento-txt">Pagina Talkd V1</h2>
                     <div class="tec-usada-item container">
@@ -319,16 +305,16 @@
                     <img class="item-img-projetos" src="./Imagens-projetos/Pagina-talkd-v1.png" alt="Projeto Página Talkd v1" />
                   </div>
                   <div class="desc-item">
-                    <p class="txt-desc-item">Essa página foi criada como um "teste" para substituir a página que era utilizada pela empresa <b>Talkd Soluções em Atendimento</b> onde trabalhei como Auxiliar de projetos.</p>
-                    <div class="btn-projetos">
-                      <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Pagina-TalkD/blob/main/V1/pag_inicial.html" target="_blank"><button class="btn-desc-projetos txt-destaque">Usar projeto</button></a>
-                      <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos txt-destaque">Repositorio</button></a>
-                    </div>
+                    <p class="txt-descricao">Essa página foi criada como um "teste" para substituir a página que era utilizada pela empresa <b>Talkd Soluções em Atendimento</b>, local onde eu trabalhei como Auxiliar de projetos até pouco tempo atrás.</p>
+                  </div>
+                  <div class="btn-projetos">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Mileriss/Pagina-TalkD/blob/main/V1/pag_inicial.html" target="_blank"><button class="btn-desc-projetos borda-padrao rosa-shock txt-descricao">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos borda-padrao roxo txt-descricao">Repositorio</button></a>
                   </div>
                 </div>
 
                 <!--PÁGINA TALKD V2-->
-                <div class="front-item carousel-item" data-bs-interval="100000">
+                <div class="front-item carousel-item" data-bs-interval="80000">
                   <div class="div-titulo-projetos">
                     <h2 class="sub-titulo deslocamento-txt">Pagina Talkd V2</h2>
                     <div class="tec-usada-item container">
@@ -342,20 +328,20 @@
                     <img class="item-img-projetos" src="./Imagens-projetos/Pagina-talkd-v2.png" alt="Projeto Página Talkd v2" />
                   </div>
                   <div class="desc-item">
-                    <p class="txt-desc-item">Essa é uma versão mais elaborada da página criada para a <b>Talkd Soluções em Atendimento</b>, após criar a página de testes e ver que o pessoal aceitou a idéia eu decidi me empenhar em criar uma página com mais recursos.</p>
-                    <div class="btn-projetos">
-                      <a href="https://mileriss.github.io/talkd/index.html" target="_blank"><button class="btn-desc-projetos txt-destaque">Usar projeto</button></a>
-                      <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos txt-destaque">Repositorio</button></a>
-                    </div>
+                    <p class="txt-descricao">Essa é uma versão mais elaborada da página criada para a <b>Talkd Soluções em Atendimento</b>, após criar a página de testes e ver que o pessoal aceitou a idéia eu decidi me empenhar em criar uma página com mais recursos.</p>
+                  </div>
+                  <div class="btn-projetos">
+                    <a href="https://mileriss.github.io/talkd/index.html" target="_blank"><button class="btn-desc-projetos borda-padrao rosa-shock txt-descricao">Usar projeto</button></a>
+                    <a href="https://github.com/Mileriss/Pagina-TalkD/tree/main" target="_blank"><button class="btn-desc-projetos borda-padrao roxo txt-descricao">Repositorio</button></a>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <button id="btn-carousel-anterior" class="carousel-control-prev verde-claro" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span id="icone-btn-carousel-anterior" class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button id="btn-carousel-anterior" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span id="icone-btn-carousel-proximo" class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -369,7 +355,7 @@
       ║  ║ ║║║║ ║ ╠═╣ ║ ║ ║
       ╚═╝╚═╝╝╚╝ ╩ ╩ ╩ ╩ ╚═╝   
     -->
-    <section id="secao-contato" class="secoes">
+    <section id="secao-contato" class="secoes preto">
       <div id="contato" class="img-de-fundo espacamento-div">
         <h1 id="titulo-contato" class="titulo-principal">Contato</h1>
         <!-- <div id="txt-introd-contato" class="container">
