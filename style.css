@@ -316,6 +316,7 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
+    animation: luz-piscando-objetivo 1s alternate ease-in-out infinite;
 }
 
 #div-img-objetivo {
@@ -331,6 +332,21 @@
 #div-txt-objetivo {
     text-align: justify;
     padding: 20px;
+}
+
+
+@keyframes luz-piscando-objetivo {
+    0% {
+        box-shadow: 0px 0px 5px var(--neon-azul-claro);
+        transition: 5ms;
+
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px var(--neon-azul-claro);
+        transition: 20ms;
+    }
+
 }
 
 /*
