@@ -80,14 +80,9 @@
 
 #rafael-mileris {
     font-family: "PIXELADO", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--neon-azul-claro);
-}
-
-#rafael-mileris:hover{
-    transition: 0.5s;
-    text-shadow: 2px 2px 0px var(--neon-rosa-shock);
+    color: var(--neon-rosa-shock);
+    text-shadow: 2px 2px 0px var(--neon-roxo);
     -webkit-text-stroke: 1px black;
-    cursor:context-menu;
 }
 
 #redes-contato {
@@ -432,12 +427,11 @@
     }
 }
 
-.btn-projetos {
+.div-btn-projetos {
     display: flex;
     flex-flow: row wrap;
     place-content: center;
     margin: 0px auto;
-    /* background-color: red; */
     width: fit-content;
 }
 
@@ -446,6 +440,13 @@
     background-color: black;
     font-size: 20px;
     color: white;
+}
+
+.btn-usar-projeto{
+    background: linear-gradient(to right bottom, var(--neon-rosa-shock), black 30% 70%, var(--neon-rosa-shock));
+}
+.btn-repositorio{
+    background: linear-gradient(to right bottom, var(--neon-roxo), black 30% 70%, var(--neon-roxo));
 }
 
 .item-img-projetos {
