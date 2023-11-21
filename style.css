@@ -109,7 +109,6 @@
     height: 80px;
     border: 3px outset black;
     border-radius: 10px;
-    /* background: linear-gradient(to right bottom, mediumslateblue, lightpink, mediumslateblue); */
     background: linear-gradient(to bottom, var(--neon-roxo), var(--neon-azul-claro));
     box-shadow: 0px 0px 10px var(--neon-lilas);
 }
@@ -359,7 +358,6 @@
 }
 
 #div-introd-projetos {
-    /* background-color: purple; */
     margin: 0 auto;
     text-align: justify;
     padding: 20px;
@@ -372,6 +370,7 @@
 
 #projetos-frontend {
     padding: 20px;
+    background-color: black;
 
 }
 
@@ -414,7 +413,7 @@
     border-bottom-color: black;
     border-style: ridge double;
     border-radius: 20px;
-    margin: 20px;
+    margin: 25px;
     width: auto;
     height: auto;
     padding: 10px;
@@ -449,20 +448,10 @@
     color: white;
 }
 
-/*! Front-end*/
-#projetos-frontend {
-    /* background-color: green; */
-}
-
-.front-item {
-    /* border: 10px solid silver; */
-    border-radius: 10px;
-}
-
 .item-img-projetos {
     height: 450px;
-    /* height:100%; */
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 2px solid dimgray;
 }
 
 /*! Formatação icone do Carousel Bootstrap*/
@@ -475,7 +464,6 @@
 #icone-btn-carousel-anterior, #icone-btn-carousel-proximo{
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-radius: 5px;
-    
 }
 
 
