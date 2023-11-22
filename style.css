@@ -443,6 +443,7 @@
 }
 
 .btn-usar-projeto{
+    /* background: linear-gradient(to right bottom, var(--neon-rosa-shock), black 30% 70%, var(--neon-rosa-shock)); */
     background: linear-gradient(to right bottom, var(--neon-rosa-shock), black 30% 70%, var(--neon-rosa-shock));
 }
 .btn-repositorio{
@@ -488,21 +489,22 @@
 #div-form {
     display: grid;
     grid-template-columns: 60% 40%;
-    border: 2px solid red;
     margin: 0 auto;
+    padding: 10px;
 }
 
 #txt-introd-form {
-    padding: 50px;
-    background-color: green;
+    padding: 60px;
 }
 
 .txt-form-contato {
     font-size: 50px !important;
+    text-align: center;
 }
 
 #form-contato {
     background-color: black;
+    background: linear-gradient(to bottom,var(--neon-azul-escuro), black 5% 95%, var(--neon-azul-escuro));
     padding: 20px;
 }
 
@@ -510,27 +512,43 @@
     font-size: 30px;
 }
 
+input::placeholder, textarea::placeholder{
+    -webkit-text-stroke: 0.3px var(--neon-azul-claro);
+    color: white;
+}
+
 .form-inp {
-    color: black;
+    color: white;
     width: 100%;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+#form-inp-textarea{
+    max-height: 200px;
+    min-height: 100px;
+    font-size: 20px;
+    text-align: left;
 }
 
 .inp-obrigatorio {
     color: goldenrod;
 }
 
-#btn-enviar {
-    text-align: center;
+#form-btn {
     width: auto;
     margin: 0 auto;
-    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
 }
 
-.form-btn {
+.btn-enviar {
     font-size: 20px;
     width: 40%;
-    border: 2px solid blue;
-    border-radius: 10px;
+    color: white;
+    background-color: black !important;
+    text-align: center;
 }
 
 

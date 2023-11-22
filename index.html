@@ -358,26 +358,24 @@
     <section id="secao-contato" class="secoes">
       <div id="contato" class="img-de-fundo espacamento-div">
         <h1 id="titulo-contato" class="titulo-principal">Contato</h1>
-        <!-- <div id="txt-introd-contato" class="container">
-          <p class="txt-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ab dicta. Quibusdam temporibus consequuntur sapiente, ipsa minus fugit eveniet, dolorum voluptates amet cupiditate molestiae! Maxime porro dolorem fugiat enim.</p>
-        </div> -->
-        <div id="div-form" class="row container">
-          <div id="txt-introd-form">
-            <p class="txt-principal txt-form-contato">Conheça um novo profissional para a sua empresa, vamos conversar!</p>
-            <p class="txt-principal txt-form-contato">Obrigado por ter visitado a minha página!</p>
+        <div id="div-form" class="row container borda-dupla amarelo fundo-escuro">
+          <div id="txt-introd-form" class="txt-principal">
+            <p class="txt-principal txt-form-contato">Obrigado por ter visitado a minha página.</p>
+            <br>
+            <p class="txt-destaque txt-form-contato">Vamos conversar!</p>
           </div>
-          <div id="form-contato">
+          <div id="form-contato" class="borda-padrao azul-escuro">
             <form action="https://api.sheetmonkey.io/form/6WyQBafaG3VnKZtTtWujst" method="post">
               <label class="form-lbl txt-secundario" for="nome"><span class="inp-obrigatorio">*</span>Nome:</label><br />
-              <input class="form-inp txt-secundario" placeholder="Digite seu nome..." type="text" name="nome" maxlength="30" title="Máximo de 30 caracteres" required /><br />
+              <input class="form-inp txt-secundario borda-padrao azul-claro" placeholder="Digite seu nome..." type="text" name="nome" maxlength="20" title="Máximo de 30 caracteres" required /><br />
               <label class="form-lbl txt-secundario" for="contato"><span class="inp-obrigatorio">*</span>Contato:</label><br />
-              <input class="form-inp txt-secundario" placeholder="Digite seu contato..." type="number" name="contato" maxlength="11" title="Sem espaços ou traços" required /><br />
+              <input class="form-inp txt-secundario borda-padrao azul-claro" placeholder="Digite seu contato..." type="number" name="contato" maxlength="11" title="Sem espaços ou traços" required /><br />
               <label class="form-lbl txt-secundario" for="email">Email:</label><br />
-              <input class="form-inp txt-secundario" placeholder="Digite seu e-mail..." type="email" name="email" autocomplete="email" title="Preencha este campo (Não obrigatório)" /><br />
-              <label class="form-lbl txt-secundario" for="solicitacao"><span class="inp-obrigatorio">*</span>Solicitacao:</label><br />
-              <textarea class="form-inp" placeholder="Deixe sua solicitação, sugestão, elogio ou critica aqui..." name="solicitacao" maxlength="250" title="Máximo de 250 caracteres" required></textarea><br />
-              <div id="btn-enviar">
-                <button class="form-btn" type="submit">Enviar</button>
+              <input class="form-inp txt-secundario borda-padrao azul-claro" placeholder="Digite seu e-mail..." type="email" name="email" autocomplete="email" title="Preencha este campo (Não obrigatório)" /><br />
+              <label class="form-lbl txt-secundario" for="solicitacao"><span class="inp-obrigatorio">*</span>Solicitação:</label><br />
+              <textarea id="form-inp-textarea" class="form-inp borda-padrao azul-claro" placeholder="Deixe sua solicitação, sugestão, elogio ou critica..." name="solicitacao" maxlength="250" title="Máximo de 250 caracteres" required></textarea><br />
+              <div id="form-btn">
+                <button class="btn-enviar borda-padrao amarelo" type="submit">Enviar</button>
               </div>
 
               <div id="form-icones-contato">
