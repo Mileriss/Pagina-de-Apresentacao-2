@@ -49,6 +49,7 @@
     /* background-image: url(https://cdn.pixabay.com/photo/2018/12/18/22/29/background-3883181_1280.jpg); */
     /* background-image: url(https://cdn.pixabay.com/photo/2018/05/11/09/29/glass-3389935_1280.jpg); */
     background: linear-gradient(to bottom, black, rgba(62, 20, 77, 0.8), rgba(62, 20, 77, 0.8), black);
+    /* background: linear-gradient(to right, rgba(62, 20, 77, 0.8), black 20% 80%, rgba(62, 20, 77, 0.8)); */
 }
 
 /*! Div geral*/
@@ -153,7 +154,8 @@
     /* background-image: url(https://cdn.pixabay.com/photo/2023/07/09/23/14/cosmic-8117067_1280.jpg); */
     /* background-image: url(https://i.gifer.com/75lf.gif); */
     /* background: linear-gradient(to bottom, black, rgba(22, 131, 248, 0.3),rgba(245, 41, 140, 0.3), black); */
-    background: linear-gradient(to bottom, black, rgba(22, 131, 248, 0.6),rgba(245, 41, 140, 0.6), black);
+    /* background: linear-gradient(to bottom, black, rgba(22, 131, 248, 0.6),rgba(245, 41, 140, 0.6), black); */
+    background: linear-gradient(to right, rgba(22, 131, 248, 0.6), black 20% 80%, rgba(245, 41, 140, 0.6));
 }
 
 #titulo-sobre-mim{
@@ -164,6 +166,8 @@
 #grid-sobre-mim {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 15px;
     margin: 0 auto;
 }
 
@@ -289,7 +293,8 @@
     /* background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/13/work-harder-1845901_1280.jpg); */
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
     /* background-image: url(https://camo.githubusercontent.com/405ec87f325f46fb3b98dff86e47a3122360532127d9ea40aa9d78ce107b9d6a/68747470733a2f2f692e696d6775722e636f6d2f4c65756836776d2e676966); */
-    background: linear-gradient(to bottom, black, rgb(32, 5, 138, 0.5),rgb(22, 131, 248, 0.5), black);
+    /* background: linear-gradient(to bottom, black, rgb(32, 5, 138, 0.5),rgb(22, 131, 248, 0.5), black); */
+    background: linear-gradient(to right, rgb(32, 5, 138, 0.5), black 20% 80%, rgb(22, 131, 248, 0.5));
 }
 
 #titulo-objetivo{
@@ -343,7 +348,8 @@
     /* background-image: url(https://cdn.pixabay.com/photo/2023/06/12/18/30/ai-generated-8059091_1280.png); */
     /* background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg); */
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
-    background: linear-gradient(to bottom, black, rgb(165, 253, 43, 0.5), rgb(76, 255, 0, 0.5), black);
+    /* background: linear-gradient(to bottom, black, rgb(165, 253, 43, 0.5), rgb(76, 255, 0, 0.5), black); */
+    background: linear-gradient(to right, rgb(165, 253, 43, 0.5), black 20% 80%, rgb(76, 255, 0, 0.5));
     
 }
 
@@ -476,14 +482,16 @@
 */
 
 #contato, #navbar-contato{
-    background: linear-gradient(to bottom, black, rgb(32, 5, 138, 0.5),rgb(250, 236, 46, 0.5), black);
+    /* background: linear-gradient(to bottom, black, rgb(179, 0, 24, 0.5),rgb(184, 185, 187, 0.5), black); */
+    background: linear-gradient(to right, rgb(179, 0, 24, 0.5), black 20% 80%, rgb(184, 185, 187, 0.5));
     
+
 }
 
 
 #titulo-contato{
-    text-shadow: 5px 5px 0px var(--neon-azul-escuro);
-    -webkit-text-stroke: 2px var(--neon-amarelo);
+    text-shadow: 5px 5px 0px var(--neon-vermelho);
+    -webkit-text-stroke: 2px var(--neon-prateado);
 }
 
 #div-form {
@@ -502,25 +510,32 @@
     text-align: center;
 }
 
+#vamos-conversar{
+    color: var(--neon-prateado);
+    text-shadow: 5px 5px 0px var(--neon-vermelho);
+    -webkit-text-stroke: 2px black;
+}
+
 #form-contato {
     background-color: black;
-    background: linear-gradient(to bottom,var(--neon-azul-escuro), black 5% 95%, var(--neon-azul-escuro));
     padding: 20px;
 }
 
 .form-lbl {
-    font-size: 30px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Zen Dots', sans-serif;
+    padding-top: 10px;
 }
 
 input::placeholder, textarea::placeholder{
-    -webkit-text-stroke: 0.3px var(--neon-azul-claro);
-    color: white;
+    color: white 0.5;
 }
 
 .form-inp {
-    color: white;
+    color: black !important;
     width: 100%;
-    background-color: black;
+    background-color: var(--neon-prateado);
     padding: 5px;
     text-align: center;
 }
@@ -544,10 +559,10 @@ input::placeholder, textarea::placeholder{
 }
 
 .btn-enviar {
-    font-size: 20px;
-    width: 40%;
-    color: white;
-    background-color: black !important;
+    width: 50%;
+    color: black;
+    background-color: var(--neon-vermelho) !important;
+    background: linear-gradient(to bottom, black, var(--neon-vermelho), black) !important;
     text-align: center;
 }
 
