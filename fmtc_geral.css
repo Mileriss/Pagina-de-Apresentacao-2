@@ -17,6 +17,8 @@
     --neon-amarelo: rgb(250, 236, 46);
     --neon-prateado: rgb(184, 185, 187);
     --neon-vermelho: rgb(179, 0, 24);
+    --neon-laranja: rgb(255, 103, 0);
+    --neon-salmao: rgb(255, 153, 153);
 }
 
 body {
