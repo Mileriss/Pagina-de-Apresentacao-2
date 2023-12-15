@@ -155,7 +155,7 @@
     /* background-image: url(https://i.gifer.com/75lf.gif); */
     /* background: linear-gradient(to bottom, black, rgba(22, 131, 248, 0.3),rgba(245, 41, 140, 0.3), black); */
     /* background: linear-gradient(to bottom, black, rgba(22, 131, 248, 0.6),rgba(245, 41, 140, 0.6), black); */
-    background: linear-gradient(to right, rgba(22, 131, 248, 0.6), black 20% 80%, rgba(245, 41, 140, 0.6));
+    background: linear-gradient(to right bottom, rgba(22, 131, 248, 0.6), black 20% 80%, rgba(245, 41, 140, 0.6));
 }
 
 #titulo-sobre-mim{
@@ -294,7 +294,7 @@
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
     /* background-image: url(https://camo.githubusercontent.com/405ec87f325f46fb3b98dff86e47a3122360532127d9ea40aa9d78ce107b9d6a/68747470733a2f2f692e696d6775722e636f6d2f4c65756836776d2e676966); */
     /* background: linear-gradient(to bottom, black, rgb(32, 5, 138, 0.5),rgb(22, 131, 248, 0.5), black); */
-    background: linear-gradient(to right, rgb(32, 5, 138, 0.5), black 20% 80%, rgb(22, 131, 248, 0.5));
+    background: linear-gradient(to right bottom, rgb(32, 5, 138, 0.5), black 20% 80%, rgb(22, 131, 248, 0.5));
 }
 
 #titulo-objetivo{
@@ -349,7 +349,7 @@
     /* background-image: url(https://cdn.pixabay.com/photo/2019/05/29/16/00/retro-4237850_1280.jpg); */
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Digital_rain_animation_small_letters_clear.gif); */
     /* background: linear-gradient(to bottom, black, rgb(165, 253, 43, 0.5), rgb(76, 255, 0, 0.5), black); */
-    background: linear-gradient(to right, rgb(165, 253, 43, 0.5), black 20% 80%, rgb(76, 255, 0, 0.5));
+    background: linear-gradient(to right bottom, rgb(165, 253, 43, 0.5), black 20% 80%, rgb(76, 255, 0, 0.5));
     
 }
 
@@ -449,11 +449,10 @@
 }
 
 .btn-usar-projeto{
-    /* background: linear-gradient(to right bottom, var(--neon-rosa-shock), black 30% 70%, var(--neon-rosa-shock)); */
-    background: linear-gradient(to right bottom, var(--neon-rosa-shock), black 30% 70%, var(--neon-rosa-shock));
+    background: linear-gradient(to right bottom, var(--neon-azul-claro), black 30% 70%, var(--neon-azul-claro));
 }
 .btn-repositorio{
-    background: linear-gradient(to right bottom, var(--neon-roxo), black 30% 70%, var(--neon-roxo));
+    background: linear-gradient(to right bottom, var(--neon-vermelho), black 30% 70%, var(--neon-vermelho));
 }
 
 .item-img-projetos {
