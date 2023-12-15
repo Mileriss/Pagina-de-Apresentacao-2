@@ -483,15 +483,15 @@
 
 #contato, #navbar-contato{
     /* background: linear-gradient(to bottom, black, rgb(179, 0, 24, 0.5),rgb(184, 185, 187, 0.5), black); */
-    background: linear-gradient(to right, rgb(179, 0, 24, 0.5), black 20% 80%, rgb(184, 185, 187, 0.5));
+    background: linear-gradient(to right bottom, rgb(255, 229, 180, 0.5), black 20% 80%, rgb(255, 103, 0, 0.5));
     
 
 }
 
 
 #titulo-contato{
-    text-shadow: 5px 5px 0px var(--neon-vermelho);
-    -webkit-text-stroke: 2px var(--neon-prateado);
+    text-shadow: 5px 5px 0px var(--neon-laranja);
+    -webkit-text-stroke: 2px var(--neon-pessego);
 }
 
 #div-form {
@@ -511,8 +511,8 @@
 }
 
 #vamos-conversar{
-    color: var(--neon-prateado);
-    text-shadow: 5px 5px 0px var(--neon-vermelho);
+    color: var(--neon-laranja);
+    text-shadow: 5px 5px 0px var(--neon-pessego);
     -webkit-text-stroke: 2px black;
 }
 
@@ -535,7 +535,7 @@ input::placeholder, textarea::placeholder{
 .form-inp {
     color: black !important;
     width: 100%;
-    background-color: var(--neon-prateado);
+    background-color: var(--neon-pessego);
     padding: 5px;
     text-align: center;
 }
@@ -561,8 +561,8 @@ input::placeholder, textarea::placeholder{
 .btn-enviar {
     width: 50%;
     color: black;
-    background-color: var(--neon-vermelho) !important;
-    background: linear-gradient(to bottom, black, var(--neon-vermelho), black) !important;
+    background-color: var(--neon-laranja) !important;
+    background: linear-gradient(to bottom, black, var(--neon-laranja), black) !important;
     text-align: center;
 }
 
