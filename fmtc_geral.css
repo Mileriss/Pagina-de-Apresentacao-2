@@ -19,6 +19,7 @@
     --neon-vermelho: rgb(179, 0, 24);
     --neon-laranja: rgb(255, 103, 0);
     --neon-salmao: rgb(255, 153, 153);
+    --neon-pessego: rgb(255, 229, 180);
 }
 
 body {
@@ -279,6 +280,18 @@ a {
 .vermelho{
     border-color: var(--neon-vermelho);
     box-shadow: 0px 0px 10px var(--neon-vermelho);
+}
+.laranja{
+    border-color: var(--neon-laranja);
+    box-shadow: 0px 0px 10px var(--neon-laranja);
+}
+.salmao{
+    border-color: var(--neon-salmao);
+    box-shadow: 0px 0px 10px var(--neon-salmao);
+}
+.pessego{
+    border-color: var(--neon-pessego);
+    box-shadow: 0px 0px 10px var(--neon-pessego);
 }
 .preto{
     border-color: black;
